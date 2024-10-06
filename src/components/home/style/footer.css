@@ -27,7 +27,7 @@ footer .box .social {
   gap: 30px;
 }
 
-footer .box .social .i{
+footer .box .social .i {
   cursor: pointer;
   font-size: 18px;
 }
@@ -62,7 +62,7 @@ footer .box .social .i{
 }
 .footer-details .child-1 .button {
   display: flex;
-} 
+}
 .footer-details .child-1 .button button:hover {
   scale: 1.05;
 }
@@ -130,9 +130,8 @@ footer .box .social .i{
   align-items: center;
   cursor: pointer;
   color: #e2e8f0;
-
 }
-.footer-details .child-2 .box-1 .follow-button .icon .i{
+.footer-details .child-2 .box-1 .follow-button .icon .i {
   font-size: 16px;
 }
 .footer-details .child-2 .box-2,

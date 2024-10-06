@@ -1,8 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { FaSpotify, FaApple, FaYoutube } from 'react-icons/fa'; // Import react-icons
-import { gallery1, gallery2, gallery3, gallery4, gallery5 } from '../../assets/index';
-import './style/mywork.css';
-import './style/hero.css';
+import React, { useEffect, useState } from "react";
+import { FaSpotify, FaApple, FaYoutube } from "react-icons/fa"; // Import react-icons
+import {
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+} from "../../assets/index";
+import "./style/mywork.css";
+import "./style/hero.css";
 
 // Define the types for the items
 interface Item {
@@ -23,57 +29,56 @@ const MyWork: React.FC = () => {
     const items = [
       {
         image: gallery2,
-        title: 'Rockstar blood',
-        year: '2023',
+        title: "Rockstar blood",
+        year: "2023",
         links: {
-          spotify: 'https://spotify.com',
-          apple: 'https://apple.com',
-          youtube: 'https://youtube.com',
+          spotify: "https://spotify.com",
+          apple: "https://apple.com",
+          youtube: "https://youtube.com",
         },
       },
       {
         image: gallery1,
-        title: 'isha',
-        year: '2024',
+        title: "isha",
+        year: "2024",
         links: {
-          spotify: 'https://spotify.com',
-          apple: 'https://apple.com',
-          youtube: 'https://youtube.com',
+          spotify: "https://spotify.com",
+          apple: "https://apple.com",
+          youtube: "https://youtube.com",
         },
       },
       {
         image: gallery3,
-        title: 'Tapstar',
-        year: '2023',
+        title: "Tapstar",
+        year: "2023",
         links: {
-          spotify: 'https://spotify.com',
-          apple: 'https://apple.com',
-          youtube: 'https://youtube.com',
+          spotify: "https://spotify.com",
+          apple: "https://apple.com",
+          youtube: "https://youtube.com",
         },
       },
       {
         image: gallery4,
-        title: 'Fame',
-        year: '2023',
+        title: "Fame",
+        year: "2023",
         links: {
-          spotify: 'https://spotify.com',
-          apple: 'https://apple.com',
-          youtube: 'https://youtube.com',
+          spotify: "https://spotify.com",
+          apple: "https://apple.com",
+          youtube: "https://youtube.com",
         },
       },
       {
         image: gallery5,
-        title: 'Balenciaga',
-        year: '2023',
+        title: "Balenciaga",
+        year: "2023",
         links: {
-          spotify: 'https://spotify.com',
-          apple: 'https://apple.com',
-          youtube: 'https://youtube.com',
+          spotify: "https://spotify.com",
+          apple: "https://apple.com",
+          youtube: "https://youtube.com",
         },
       },
     ];
 
-  
     setMusicItems(items);
   }, []);
 
@@ -108,15 +113,23 @@ const MyWork: React.FC = () => {
                   <h3>{item.title}</h3>
                   <p>{item.year}</p>
                   <div className="social">
-                   
-                    <div className="icon" onClick={() => window.open(item.links.spotify, '_blank')}>
-                      <FaSpotify className='i' /> 
+                    <div
+                      className="icon"
+                      onClick={() => window.open(item.links.spotify, "_blank")}
+                    >
+                      <FaSpotify className="i" />
                     </div>
-                    <div className="icon" onClick={() => window.open(item.links.apple, '_blank')}>
-                      <FaApple  className='i' /> 
+                    <div
+                      className="icon"
+                      onClick={() => window.open(item.links.apple, "_blank")}
+                    >
+                      <FaApple className="i" />
                     </div>
-                    <div className="icon" onClick={() => window.open(item.links.youtube, '_blank')}>
-                      <FaYoutube className='i' /> 
+                    <div
+                      className="icon"
+                      onClick={() => window.open(item.links.youtube, "_blank")}
+                    >
+                      <FaYoutube className="i" />
                     </div>
                   </div>
                 </div>

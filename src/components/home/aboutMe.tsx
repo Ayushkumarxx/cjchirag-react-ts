@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
-import { about } from '../../assets/index';
-import './style/aboutMe.css'
+import { about } from "../../assets/index";
+import "./style/aboutMe.css";
 
 const AboutMe: React.FC = () => {
   return (
@@ -34,10 +34,10 @@ const AboutMe: React.FC = () => {
 
           <div className="button">
             <button className="button-1">
-            <FaInstagram  className='i' /> Instagram
+              <FaInstagram className="i" /> Instagram
             </button>
             <button className="button-2">
-            <FaSpotify  className='i'/> Spotify
+              <FaSpotify className="i" /> Spotify
             </button>
           </div>
         </div>

@@ -1,6 +1,6 @@
-import React from 'react';
-import './style/artist.css'; 
-import {admin} from '../../assets/index'
+import React from "react";
+import "./style/artist.css";
+import { admin } from "../../assets/index";
 
 // Define the types for the artists
 interface Artist {
@@ -14,28 +14,31 @@ interface Artist {
 
 const artistsData: Artist[] = [
   {
-    name: 'CJCHIRAG X KALAM INK',
+    name: "CJCHIRAG X KALAM INK",
     images: {
       img1: admin,
-      img2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRr7okzZZ0BkJeeEUkIN92LCcXM-H5QuCZg&s',
+      img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRr7okzZZ0BkJeeEUkIN92LCcXM-H5QuCZg&s",
     },
-    description: 'I\'ve had the privilege of working alongside talented individuals from diverse creative backgrounds.',
+    description:
+      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
   },
   {
-    name: 'CJCHIRAG X LOCA',
+    name: "CJCHIRAG X LOCA",
     images: {
       img1: admin,
-      img2: 'https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1673594254869-Loka.jpg',
+      img2: "https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1673594254869-Loka.jpg",
     },
-    description: 'I\'ve had the privilege of working alongside talented individuals from diverse creative backgrounds.',
+    description:
+      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
   },
   {
-    name: 'CJCHIRAG X KIDSHOT',
+    name: "CJCHIRAG X KIDSHOT",
     images: {
       img1: admin,
-      img2: 'https://images.genius.com/72a9f903c916d3f33b843dee4c1352f3.1000x1000x1.jpg',
+      img2: "https://images.genius.com/72a9f903c916d3f33b843dee4c1352f3.1000x1000x1.jpg",
     },
-    description: 'I\'ve had the privilege of working alongside talented individuals from diverse creative backgrounds.',
+    description:
+      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
   },
 ];
 

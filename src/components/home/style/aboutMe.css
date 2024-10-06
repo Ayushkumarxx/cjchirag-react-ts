@@ -74,16 +74,14 @@
   margin-right: 5px;
   font-size: 16px;
 }
-.about_me .main .child-2 button{
+.about_me .main .child-2 button {
   transition: 0.2s;
   cursor: pointer;
-  
-  
 }
-.about_me .main .child-2 .button{
+.about_me .main .child-2 .button {
   display: flex;
 }
-.about_me .main .child-2 button:hover{
+.about_me .main .child-2 button:hover {
   scale: 1.05;
 }
 .about_me .main .child-2 .button-1 {
@@ -117,12 +115,12 @@
 
 /***Stying for small screens***/
 @media screen and (max-width: 800px) {
-    .about_me .head h2{
-        font-size: 32px;
-    }
-    .about_me .head .text{
-        font-size: 14px;
-    }
+  .about_me .head h2 {
+    font-size: 32px;
+  }
+  .about_me .head .text {
+    font-size: 14px;
+  }
   .about_me .main {
     width: 100%;
     height: auto;
@@ -139,11 +137,11 @@
   .about_me .main .child-2 {
     width: 100%;
   }
-  .about_me .main .child-2 .heading{
+  .about_me .main .child-2 .heading {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  .about_me .main .child-2 .text{
+  .about_me .main .child-2 .text {
     font-size: 14px;
   }
 

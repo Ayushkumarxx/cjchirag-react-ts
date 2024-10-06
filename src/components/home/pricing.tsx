@@ -136,9 +136,8 @@ const PricingSection: React.FC = () => {
         </div>
         <div className="box-2">
           <div className="plan-1">
-         
             <div className="head">
-            <div className="ticker"></div>
+              <div className="ticker"></div>
               <div className="heading">Starter</div>
             </div>
             <div className="hr-1"></div>

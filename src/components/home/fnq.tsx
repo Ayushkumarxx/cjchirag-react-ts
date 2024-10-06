@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./style/fnq.css"; 
-import { question } from "../../assets/index"; 
+import "./style/fnq.css";
+import { question } from "../../assets/index";
 
 const accordionItems: { heading: string; description: string }[] = [
   {
@@ -34,10 +34,10 @@ const Fnq: React.FC = () => {
   };
 
   useEffect(() => {
-    bodyRefs.current.forEach((ref, index) => {
+    bodyRefs.current.forEach((ref: HTMLDivElement | null, index: number) => {
       if (ref) {
-        ref.style.maxHeight = activeIndex === index ? `${ref.scrollHeight}px` : "0";
-       
+        ref.style.maxHeight =
+          activeIndex === index ? `${ref.scrollHeight}px` : "0";
       }
     });
   }, [activeIndex]);
@@ -63,7 +63,9 @@ const Fnq: React.FC = () => {
       {accordionItems.map((item, index) => (
         <div className="accordion-item" key={index}>
           <div
-            className={`accordion-item-header ${activeIndex === index ? "active" : ""}`}
+            className={`accordion-item-header ${
+              activeIndex === index ? "active" : ""
+            }`}
             onClick={() => handleToggle(index)}
           >
             {item.heading}
@@ -71,9 +73,10 @@ const Fnq: React.FC = () => {
           <div
             className="accordion-item-body"
             ref={(el) => (bodyRefs.current[index] = el)}
-           
           >
-            <div className="accordion-item-body-content">{item.description}</div>
+            <div className="accordion-item-body-content">
+              {item.description}
+            </div>
           </div>
         </div>
       ))}
