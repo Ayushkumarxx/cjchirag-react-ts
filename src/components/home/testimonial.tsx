@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { test1, test2, test3, test4, test5, test6 } from "../../assets/index";
 import "./style/testimonial.css";
-import { Fade, Zoom, AttentionSeeker } from "react-awesome-reveal";
+import { Fade,  AttentionSeeker } from "react-awesome-reveal";
 interface Comment {
   name: string;
   username: string;
