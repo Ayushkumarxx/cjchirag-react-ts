@@ -110,19 +110,19 @@ const Testimonial: React.FC = () => {
       </div>
       <div className="box-2">
         <div className="child" id="testimonial-1">
-          <Zoom cascade damping={0.1} triggerOnce>
+          <Fade cascade damping={0.1} triggerOnce>
           {commentsData.slice(0, 2).map(createCommentElement)}
-          </Zoom>
+          </Fade>
         </div>
         <div className="child" id="testimonial-2">
-        <Zoom cascade damping={0.1} triggerOnce>
+        <Fade cascade damping={0.1} triggerOnce>
           {commentsData.slice(2, 4).map(createCommentElement)}
-          </Zoom>
+          </Fade>
         </div>
         <div className="child" id="testimonial-3">
-        <Zoom cascade damping={0.1} triggerOnce>
+        <Fade cascade damping={0.1} triggerOnce>
           {commentsData.slice(4).map(createCommentElement)}
-          </Zoom>
+          </Fade>
         </div>
       </div>
     </section>
