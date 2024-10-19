@@ -46,6 +46,7 @@ const artistsData: Artist[] = [
 const ArtistCard: React.FC<Artist> = ({ name, images, description }) => {
   return (
     <div className="content">
+      <Fade cascade damping={0.1} triggerOnce>
       <div className="images">
         <div className="img-1">
           <img src={images.img1} alt={name} />
@@ -56,6 +57,7 @@ const ArtistCard: React.FC<Artist> = ({ name, images, description }) => {
       </div>
       <p className="text">{name}</p>
       <p className="desc">{description}</p>
+      </Fade>
     </div>
   );
 };
@@ -81,12 +83,12 @@ const ArtistsWorkedWith: React.FC = () => {
 
       {/* Main flex box showing top 3 artists I worked with */}
       <div className="main-box">
-        <Zoom cascade damping={0.1} triggerOnce>
+        
         {artistsData.map((artist, index) => (
           
           <ArtistCard key={index} {...artist} />
         ))}
-        </Zoom>
+      
       </div>
     </section>
   );
