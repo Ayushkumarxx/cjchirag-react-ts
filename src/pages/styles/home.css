@@ -1,0 +1,36 @@
+
+/* Style for scroll-top button */
+.backToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    border: none;
+    color: #cccccc;
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .backToTopBtn:not(:hover) {
+    background: #0f0f0f;
+   
+  }
+  .backToTopBtn:hover {
+    background: #050505;
+  }
+  .backToTopBtn.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .backToTopBtn:not(.active) {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
