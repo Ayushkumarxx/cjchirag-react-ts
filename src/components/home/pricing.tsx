@@ -35,7 +35,7 @@ const PricingSection: React.FC = () => {
           </div>
           </Fade>
         </div>
-      
+        <Fade cascade triggerOnce>
         <div className="box-2">
           
           <div className="plans st-1">
@@ -76,6 +76,7 @@ const PricingSection: React.FC = () => {
             <div className="child-2">Perfect for medium projects</div>
           </div>
         </div>
+        </Fade>
         <div className="box-3">
           <div className="head">All plans include</div>
           <div className="details">
