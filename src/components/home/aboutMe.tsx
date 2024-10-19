@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
 import { about } from "../../assets/index";
 import "./style/aboutMe.css";
-import { Fade, Zoom, AttentionSeeker } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 const AboutMe: React.FC = () => {
   return (
     <section className="about_me" id="about">
