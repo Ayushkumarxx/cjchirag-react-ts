@@ -20,9 +20,7 @@
     background: #0f0f0f;
    
   }
-  .backToTopBtn:hover {
-    background: #050505;
-  }
+
   .backToTopBtn.active {
     visibility: visible;
     opacity: 1;
