@@ -3,7 +3,7 @@
 .backToTopBtn {
     position: fixed;
     bottom: 50px;
-    left: 50px;
+    right: 50px;
     z-index: 1;
     height: 50px;
     width: 50px;
@@ -34,3 +34,12 @@
     pointer-events: none;
   }
   
+
+  /***Stying for small screens***/
+@media screen and (max-width: 800px){
+
+    .backToTopBtn{
+        bottom: 40px;
+        right: 20px;
+    }
+}
