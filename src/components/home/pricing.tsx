@@ -48,6 +48,7 @@ const PricingSection: React.FC = () => {
               </div>
             </div>
             <div className="child-2">Perfect for small projects</div>
+          
           </div>
         
           <div className="plans st-2">

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/artist.css";
 import { admin } from "../../assets/index";
-import { Fade,  Zoom, AttentionSeeker } from "react-awesome-reveal";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
 // Define the types for the artists
 interface Artist {
   name: string;
