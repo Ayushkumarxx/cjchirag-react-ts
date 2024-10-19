@@ -127,7 +127,10 @@ const PricingSection: React.FC = () => {
         <div className="gardient-1"></div>
 
         <div className="box-1">
+          <Fade cascade damping={0.1} triggerOnce>
+          <AttentionSeeker effect="tada" triggerOnce>
           <div className="ticker">Beats Pricing 🔥</div>
+          </AttentionSeeker>
 
           <div className="content">
             <div className="child-1">
@@ -144,6 +147,7 @@ const PricingSection: React.FC = () => {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
         <div className="box-2">
           <div className="plan-1">
