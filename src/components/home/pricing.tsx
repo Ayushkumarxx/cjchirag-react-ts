@@ -8,6 +8,7 @@ import {
 import { FaRegCircleCheck } from "react-icons/fa6";
 import "./style/pricing.css";
 import "./style/pricing_second.css";
+import { Fade, Zoom, AttentionSeeker } from "react-awesome-reveal";
 
 const PricingSection: React.FC = () => {
   return (
@@ -16,7 +17,10 @@ const PricingSection: React.FC = () => {
       <section className="plans_container" id="services">
         <div className="gardient-1"></div>
         <div className="box-1">
+          <Fade cascade damping={0.1} triggerOnce>
+          <AttentionSeeker effect="tada" triggerOnce>
           <div className="ticker">Mixing Plans 🔥</div>
+          </AttentionSeeker>
           <h2>
             Explore my pricing <br />
             plans
@@ -29,8 +33,11 @@ const PricingSection: React.FC = () => {
             <div className="child-1">CJ Chirag</div>
             <div className="child-2">Beatz</div>
           </div>
+          </Fade>
         </div>
+      
         <div className="box-2">
+          
           <div className="plans st-1">
             <div className="child-1">
               <div className="head">Growth</div>
@@ -42,6 +49,7 @@ const PricingSection: React.FC = () => {
             </div>
             <div className="child-2">Perfect for small projects</div>
           </div>
+        
           <div className="plans st-2">
             <div className="child-1">
               <div className="head">
@@ -71,7 +79,9 @@ const PricingSection: React.FC = () => {
         <div className="box-3">
           <div className="head">All plans include</div>
           <div className="details">
+          <Zoom cascade damping={0.1} triggerOnce>
             <div className="child">
+              
               <div className="inner-child">
                 <div className="icon">
                   <FaRegCircleCheck className="i" />
@@ -107,6 +117,7 @@ const PricingSection: React.FC = () => {
                 </div>
               </div>
             </div>
+            </Zoom>
           </div>
         </div>
       </section>
@@ -142,6 +153,7 @@ const PricingSection: React.FC = () => {
             </div>
             <div className="hr-1"></div>
             <div className="content">
+              <Zoom cascade damping={0.1} triggerOnce>
               <div className="child">
                 <div className="icon">
                   <FontAwesomeIcon icon={faCheck} className="i" />
@@ -172,6 +184,7 @@ const PricingSection: React.FC = () => {
                 </div>
                 <div className="text">Limited customization and extensions</div>
               </div>
+              </Zoom>
             </div>
             <div className="hr-2"></div>
             <div className="price">
@@ -195,6 +208,7 @@ const PricingSection: React.FC = () => {
             <div className="hr-1"></div>
             <div className="contents">
               <div className="content">
+                <Zoom cascade damping={0.1} triggerOnce>
                 <div className="child">
                   <div className="icon">
                     <FontAwesomeIcon icon={faCircleCheck} className="i" />
@@ -227,9 +241,11 @@ const PricingSection: React.FC = () => {
                     Limited customization and extensions
                   </div>
                 </div>
+                </Zoom>
               </div>
 
               <div className="content">
+                <Zoom cascade damping={0.1} triggerOnce>
                 <div className="child">
                   <div className="icon">
                     <FontAwesomeIcon icon={faCircleCheck} className="i" />
@@ -262,6 +278,7 @@ const PricingSection: React.FC = () => {
                     Limited customization and extensions
                   </div>
                 </div>
+                </Zoom>
               </div>
             </div>
             <div className="hr-2"></div>

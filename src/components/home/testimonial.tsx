@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { test1, test2, test3, test4, test5, test6 } from "../../assets/index";
 import "./style/testimonial.css";
-
+import { Fade, Zoom, AttentionSeeker } from "react-awesome-reveal";
 interface Comment {
   name: string;
   username: string;
@@ -100,19 +100,29 @@ const Testimonial: React.FC = () => {
       <div className="gardient-1"></div>
       <div className="gardient-2"></div>
       <div className="box-1">
+        <Fade cascade damping={0.1} triggerOnce>
+        <AttentionSeeker effect="tada" triggerOnce>
         <div className="ticker">Testimonial 🔥</div>
+        </AttentionSeeker>
         <h2>Public cheers for me!</h2>
         <p className="text">Find out our user spreading the words!</p>
+        </Fade>
       </div>
       <div className="box-2">
         <div className="child" id="testimonial-1">
+          <Zoom cascade damping={0.1} triggerOnce>
           {commentsData.slice(0, 2).map(createCommentElement)}
+          </Zoom>
         </div>
         <div className="child" id="testimonial-2">
+        <Zoom cascade damping={0.1} triggerOnce>
           {commentsData.slice(2, 4).map(createCommentElement)}
+          </Zoom>
         </div>
         <div className="child" id="testimonial-3">
+        <Zoom cascade damping={0.1} triggerOnce>
           {commentsData.slice(4).map(createCommentElement)}
+          </Zoom>
         </div>
       </div>
     </section>

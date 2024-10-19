@@ -9,6 +9,7 @@ import {
 } from "../../assets/index";
 import "./style/mywork.css";
 import "./style/hero.css";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
 
 // Define the types for the items
 interface Item {
@@ -89,30 +90,42 @@ const MyWork: React.FC = () => {
         <div className="gardient-1"></div>
 
         <div className="heading">
-          <div className="ticker">recent work 🔥</div>
-          <h2>
-            My Recent Work <br />
-            Gallery
-          </h2>
-          <p className="text">
-            Check out my latest music releases, tailored for versatility and
-            impact. <br /> Every track brings a fresh blend of sound.
-          </p>
+          <Fade cascade damping={0.1} triggerOnce>
+            <AttentionSeeker effect="tada" triggerOnce>
+              <div className="ticker">recent work 🔥</div>
+            </AttentionSeeker>
+            <h2>
+              My Recent Work <br />
+              Gallery
+            </h2>
+            <p className="text">
+              Check out my latest music releases, tailored for versatility and
+              impact. <br /> Every track brings a fresh blend of sound.
+            </p>
+          </Fade>
         </div>
       </section>
 
       {/* My works grid section */}
+
       <section className="grid-wrapper-parent">
         <div className="gardient-1"></div>
         <div className="grid-wrapper">
           {musicItems.map((item, index) => (
             <div className={`box item${index + 1}`} key={index}>
+              
               <img src={item.image} alt={item.title} className="image" />
+
               <div className="overlay">
                 <div className="overlay-content">
+                  <Fade cascade damping={0.1} triggerOnce>
+
+              
                   <h3>{item.title}</h3>
                   <p>{item.year}</p>
+                  </Fade>
                   <div className="social">
+                  <Fade cascade damping={0.1} triggerOnce>
                     <div
                       className="icon"
                       onClick={() => window.open(item.links.spotify, "_blank")}
@@ -131,7 +144,9 @@ const MyWork: React.FC = () => {
                     >
                       <FaYoutube className="i" />
                     </div>
+                    </Fade>
                   </div>
+             
                 </div>
               </div>
             </div>

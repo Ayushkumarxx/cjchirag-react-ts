@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./style/fnq.css";
 import { question } from "../../assets/index";
+import { Fade } from "react-awesome-reveal";
 
 const accordionItems: { heading: string; description: string }[] = [
   {
@@ -60,6 +61,7 @@ const Fnq: React.FC = () => {
           Find the information you need quickly and easily.
         </p>
       </div>
+      <Fade cascade damping={0.1} triggerOnce>
       {accordionItems.map((item, index) => (
         <div className="accordion-item" key={index}>
           <div
@@ -80,6 +82,7 @@ const Fnq: React.FC = () => {
           </div>
         </div>
       ))}
+      </Fade>
     </div>
   );
 };

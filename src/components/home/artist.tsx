@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/artist.css";
 import { admin } from "../../assets/index";
-
+import { Fade,  Zoom, AttentionSeeker } from "react-awesome-reveal";
 // Define the types for the artists
 interface Artist {
   name: string;
@@ -65,7 +65,9 @@ const ArtistsWorkedWith: React.FC = () => {
     <section className="artist_container">
       {/* Heading part */}
       <div className="heading">
-        <div className="ticker">my works 🔥</div>
+        <Fade cascade damping={0.1} triggerOnce>
+        <AttentionSeeker effect="tada" triggerOnce>  <div className="ticker">my works 🔥</div></AttentionSeeker>
+     
         <h2>
           Artists I've Worked <br />
           With
@@ -74,13 +76,17 @@ const ArtistsWorkedWith: React.FC = () => {
           Check out the amazing artists I've partnered with, delivering <br />
           unforgettable tracks through collaboration.
         </p>
+        </Fade>
       </div>
 
       {/* Main flex box showing top 3 artists I worked with */}
       <div className="main-box">
+        <Zoom cascade damping={0.1} triggerOnce>
         {artistsData.map((artist, index) => (
+          
           <ArtistCard key={index} {...artist} />
         ))}
+        </Zoom>
       </div>
     </section>
   );
