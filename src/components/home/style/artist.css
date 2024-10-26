@@ -114,6 +114,7 @@
 
   .artist_container .main-box .content {
     margin-bottom: 50px;
+    width: 350px ;
   }
   .artist_container .main-box .content .images .img-1,
   .artist_container .main-box .content .images .img-2 {
