@@ -4,7 +4,15 @@
   position: relative;
   padding: 10px;
 }
+.plans_container .fade-out {
+  opacity: 0; /* Fully invisible */
+}
 
+.plans_container .fade-in {
+  opacity: 1; /* Fully visible */
+ 
+}
+ 
 .plans_container .gardient-1 {
   display: none;
 }
@@ -38,12 +46,26 @@
 .plans_container .box-1 .ticker-box {
   display: flex;
   align-items: center;
-
+  position: relative;
   margin: 25px 0;
   padding: 2px;
-
+  cursor: pointer;
   border-radius: 100px;
   background: #11101d;
+}
+.plans_container .box-1 .ticker-box .tick{
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  border-radius: 100px;
+  transition: 0.5s;
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+
 }
 .plans_container .box-1 .ticker-box .child-1 {
   width: 100px;
@@ -53,13 +75,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
     -168.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
-  );
+  ); */
+  z-index: 1;
 }
+
 .plans_container .box-1 .ticker-box .child-2 {
   width: 100px;
   height: 40px;
@@ -67,6 +91,7 @@
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  z-index: 1;
 }
 
 .plans_container .box-2 {
@@ -105,6 +130,9 @@
   padding: 6px 12px;
   border-radius: 100px;
   font-size: 12px;
+}
+.plans_container .box-2 .plans .price{
+  transition: opacity 0.5s ease-in-out;
 }
 
 .plans_container .box-2 .plans .price p {
@@ -177,6 +205,7 @@
   width: 48%;
   display: flex;
   justify-content: center;
+  transition: opacity 0.5s ease-in-out;
 }
 .plans_container .box-3 .details .child .inner-child .icon {
   margin-right: 15px;

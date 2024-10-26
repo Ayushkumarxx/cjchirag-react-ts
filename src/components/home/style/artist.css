@@ -30,13 +30,13 @@
 .artist_container .heading .text {
   color: #656c7c;
 }
-
 .artist_container .main-box {
   display: flex;
-  width: 100%;
+  width: 100%; /* Full width of the container */
   justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 20px;
+  overflow: hidden; /* Prevent overflow if content is too wide */
 }
 
 .artist_container .main-box .content {
@@ -45,6 +45,8 @@
   text-align: center;
   align-items: center;
   padding: 10px;
+  width: 400px; /* Set each card to one-third of 1250px */
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .artist_container .main-box .content .images {

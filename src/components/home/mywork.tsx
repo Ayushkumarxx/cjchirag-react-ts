@@ -9,7 +9,7 @@ import {
 } from "../../assets/index";
 import "./style/mywork.css";
 import "./style/hero.css";
-import { Fade, AttentionSeeker } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 // Define the types for the items
 interface Item {
@@ -91,9 +91,9 @@ const MyWork: React.FC = () => {
 
         <div className="heading">
           <Fade cascade damping={0.1} triggerOnce>
-            <AttentionSeeker effect="tada" triggerOnce>
+           
               <div className="ticker">recent work 🔥</div>
-            </AttentionSeeker>
+           
             <h2>
               My Recent Work <br />
               Gallery

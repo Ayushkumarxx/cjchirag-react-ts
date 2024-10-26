@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { test1, test2, test3, test4, test5, test6 } from "../../assets/index";
 import "./style/testimonial.css";
-import { Fade,  AttentionSeeker } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 interface Comment {
   name: string;
   username: string;
@@ -101,9 +101,9 @@ const Testimonial: React.FC = () => {
       <div className="gardient-2"></div>
       <div className="box-1">
         <Fade cascade damping={0.1} triggerOnce>
-        <AttentionSeeker effect="tada" triggerOnce>
+       
         <div className="ticker">Testimonial 🔥</div>
-        </AttentionSeeker>
+       
         <h2>Public cheers for me!</h2>
         <p className="text">Find out our user spreading the words!</p>
         </Fade>
