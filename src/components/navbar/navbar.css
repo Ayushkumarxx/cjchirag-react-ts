@@ -56,8 +56,12 @@ nav {
     color: #e2e8f0;
     font-size: 16px;
     border-radius: 100px;
+    cursor: pointer;
+    transition: 0.2s;
   }
-  
+  nav .box-3 button:hover{
+    background: #09977d65;
+  }
   /*?Styling Hamburger Icon*/
   .hamburger div {
     width: 30px;

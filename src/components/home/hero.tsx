@@ -1,8 +1,12 @@
 import React from "react";
 import homeImage from "../../assets/home.jpeg";
 import "./style/hero.css";
+import { socialLinks } from "../../utils/social";
 
 const HeroSection: React.FC = () => {
+  const handleRedirect = () => {
+    window.open(socialLinks.instagram, '_blank'); // Opens the link in a new tab
+};
   return (
     <>
       {/* Hero Section */}
@@ -11,7 +15,7 @@ const HeroSection: React.FC = () => {
           <div className="box-1">
             <div className="text text-gradient">Hey,</div>
 
-            <div className="availabe">
+            <div className="availabe" onClick={()=> handleRedirect()}>
               <div className="main-box">
                 <div className="dot"></div>
                 <div>available for new opportunities</div>

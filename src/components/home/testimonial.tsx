@@ -29,7 +29,7 @@ const commentsData: Comment[] = [
       "CJChirag brings a fresh vibe to every track. His seamless blend of beatboxing, production, and mixing makes him a standout in the industry. Highly recommend!",
   },
   {
-    name: "LOKA",
+    name: "LOCA",
     username: "@loka_music",
     profileImage: test3,
     socialLink: "https://www.instagram.com/loka_music",

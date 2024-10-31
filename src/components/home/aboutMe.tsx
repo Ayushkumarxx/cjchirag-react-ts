@@ -3,8 +3,16 @@ import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
 import { about } from "../../assets/index";
 import "./style/aboutMe.css";
+import { socialLinks } from "../../utils/social";
 
 const AboutMe: React.FC = () => {
+  const handleRedirect = (social : string) => {
+    if (social === "instagram") {
+      window.open(socialLinks.instagram, '_blank'); // Opens the link in a new tab
+    } else if (social === "spotify") {
+      window.open(socialLinks.spotify, '_blank'); // Opens the link in a new tab
+    }
+  }
   return (
     <section className="about_me" id="about">
       <div className="gardient-1"></div>
@@ -21,28 +29,25 @@ const AboutMe: React.FC = () => {
           <img src={about} alt="About Me" />
         </div>
         <div className="child-2">
-         
           <p className="heading">The journey of my music life starts here</p>
           <p className="text">
-            Hi, I'm Chirag Choudary, known professionally as CJChirag Beatz. As
-            a passionate music producer, composer, and beatboxer from India,
-            I’ve had the privilege of working with leading names in the
-            industry. Though young, my talent and dedication have helped me make
-            a mark in the music world. I specialize in creating unique beats and
-            compositions that resonate with listeners and elevate every project
-            I undertake.
+            Hey! I’m Chirag Choudary, but most people know me as CJChirag Beatz.
+            I’m a music producer, composer, and beatboxer from India, and I’m
+            all about creating music that feels real and connects. Even though
+            I’m still young, I’ve had the chance to work with some awesome
+            artists, and it’s been a crazy, inspiring journey. I’m always
+            exploring new sounds and putting my own vibe into every beat and
+            composition
           </p>
 
           <div className="button">
-            <button className="button-1">
+            <button className="button-1" onClick={() => handleRedirect("instagram")}>
               <FaInstagram className="i" /> Instagram
             </button>
-            <button className="button-2">
+            <button className="button-2" onClick={() => handleRedirect("spotify")}>
               <FaSpotify className="i" /> Spotify
             </button>
           </div>
-
-        
         </div>
       </div>
     </section>

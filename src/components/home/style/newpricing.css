@@ -1,0 +1,211 @@
+.newpricing {
+  max-width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #11101d;
+  border-radius: 16px;
+  display: flex;
+}
+
+.newpricing .child-1 {
+  width: 40%;
+}
+.newpricing .child-1 .details {
+  padding: 20px;
+}
+.newpricing .child-1 .details h1 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.newpricing .child-1 .details .text {
+  color: #656c7c;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.newpricing .child-1 .details .price{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.newpricing .child-1 .details .pricetext{
+    color: #656c7c;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.newpricing .child-1 .details button .i{
+    margin-left: 5px;
+    font-size: 16px;
+}
+.newpricing .child-1 .details .button-1{
+    border: none;
+  width: 200px;
+  font-weight: bold;
+  height: 45px;
+  background: #08070d;
+  color: #e2e8f0;
+  font-size: 16px;
+  border-radius:100px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newpricing .child-1 .details .button-2{
+    border: 1px solid #e2e8f0;
+    width: 200px;
+    font-weight: bold;
+    height: 45px;
+    background: transparent;
+    color: #e2e8f0;
+    font-size: 16px;
+    border-radius: 100px;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newpricing .child-2 {
+  width: 60%;
+ 
+}
+
+.newpricing .child-2 .details {
+  padding: 20px;
+}
+
+.newpricing .child-2 .details .heading{
+    color: #656c7c;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.newpricing .child-2 .details .prices{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.newpricing .child-2 .details .prices .child{
+    display: flex;
+  
+}
+.newpricing .child-2 .details .prices .child .icon{
+    margin-right: 15px;
+}
+.newpricing .child-2 .details .prices .child .icon .i{
+    font-size: 16px;
+    color: #656c7c;
+}
+.newpricing .child-2 .details .prices .child .text{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+.newpricing .child-2 .details .prices .child .text .notBold{
+    color: #656c7c;
+    font-size: 14px;
+    font-weight: 500;
+}
+.newpricing  hr {
+
+    display: none;
+  }
+
+/***Stying for small screens***/
+@media screen and (max-width: 800px) {
+    .newpricing  hr {
+        background: #d1d1d1;
+        border: none;
+        height: 0.5px;
+        display: block;
+        margin: 20px 0px;
+      }
+    .newpricing {
+        width: 95%;
+        padding: 40px 20px;
+        margin: 20px auto;
+       
+        border-radius: 16px;
+        flex-direction: column;
+      }
+      
+      .newpricing .child-1 {
+        width: 100%;
+      }
+      .newpricing .child-1 .details {
+        padding: 0px;
+      }
+      .newpricing .child-1 .details h1 {
+        color: #fff;
+        font-size: 26px;
+        margin-bottom: 8px;
+      }
+      .newpricing .child-1 .details .text {
+        color: #656c7c;
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      .newpricing .child-1 .details .price{
+          color: #fff;
+          font-size: 24px;
+          margin-bottom: 8px;
+          font-weight: 600;
+      }
+      .newpricing .child-1 .details .pricetext{
+          color: #656c7c;
+          font-size: 14px;
+          margin-bottom: 25px;
+      }
+      .newpricing .child-1 .details button .i{
+          margin-left: 5px;
+          font-size: 16px;
+      }
+      .newpricing .child-1 .details .button-1{
+       display: block;
+      }
+      .newpricing .child-1 .details .button-2{
+        display: none;
+      }
+      .newpricing .child-2 {
+        width: 100%;
+       
+      }
+      
+      .newpricing .child-2 .details {
+        padding: 0px;
+      }
+      
+      .newpricing .child-2 .details .heading{
+          color: #656c7c;
+          font-size: 16px;
+          margin-bottom: 30px;
+          font-weight: bold;
+      }
+      .newpricing .child-2 .details .prices{
+          display: flex;
+          flex-direction: column;
+          gap:30px;
+      }
+      .newpricing .child-2 .details .prices .child{
+          display: flex;
+        
+      }
+      .newpricing .child-2 .details .prices .child .icon{
+          margin-right: 15px;
+      }
+      .newpricing .child-2 .details .prices .child .icon .i{
+          font-size: 16px;
+          color: #656c7c;
+      }
+      .newpricing .child-2 .details .prices .child .text{
+          
+          font-size: 16px;
+          font-weight: 500;
+      }
+      .newpricing .child-2 .details .prices .child .text .notBold{
+          color: #656c7c;
+          font-size: 14px;
+          font-weight: 500;
+      }
+}

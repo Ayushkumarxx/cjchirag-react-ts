@@ -33,9 +33,9 @@ const MyWork: React.FC = () => {
         title: "Rockstar blood",
         year: "2023",
         links: {
-          spotify: "https://spotify.com",
-          apple: "https://apple.com",
-          youtube: "https://youtube.com",
+          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
+          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
       {
@@ -43,9 +43,9 @@ const MyWork: React.FC = () => {
         title: "isha",
         year: "2024",
         links: {
-          spotify: "https://spotify.com",
-          apple: "https://apple.com",
-          youtube: "https://youtube.com",
+          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
+          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
       {
@@ -53,9 +53,9 @@ const MyWork: React.FC = () => {
         title: "Tapstar",
         year: "2023",
         links: {
-          spotify: "https://spotify.com",
-          apple: "https://apple.com",
-          youtube: "https://youtube.com",
+          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
+          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
       {
@@ -63,9 +63,9 @@ const MyWork: React.FC = () => {
         title: "Fame",
         year: "2023",
         links: {
-          spotify: "https://spotify.com",
-          apple: "https://apple.com",
-          youtube: "https://youtube.com",
+          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
+          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
       {
@@ -73,9 +73,9 @@ const MyWork: React.FC = () => {
         title: "Balenciaga",
         year: "2023",
         links: {
-          spotify: "https://spotify.com",
-          apple: "https://apple.com",
-          youtube: "https://youtube.com",
+          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
+          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
     ];

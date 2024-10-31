@@ -26,9 +26,14 @@ footer .box .social {
   font-size: 18px;
   gap: 30px;
 }
-
-footer .box .social .i {
+footer .box .social a{
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
+  font-size: 18px;
+}
+footer .box .social .i {
+
   font-size: 18px;
 }
 
@@ -130,6 +135,7 @@ footer .box .social .i {
   align-items: center;
   cursor: pointer;
   color: #e2e8f0;
+  font-size: 16px;
 }
 .footer-details .child-2 .box-1 .follow-button .icon .i {
   font-size: 16px;
@@ -155,6 +161,12 @@ footer .box .social .i {
 .footer-details .child-2 li {
   margin-bottom: 10px;
   cursor: pointer;
+}
+.footer-details .child-2 ol li a{
+  color: #d1d1d1;
+  font-size: 16px;
+  text-decoration: none;
+
 }
 
 /***Stying for small screens***/
