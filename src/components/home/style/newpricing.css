@@ -157,10 +157,7 @@
     font-size: 14px;
     margin-bottom: 25px;
   }
-  .newpricing .child-1 .details button .i {
-    margin-left: 5px;
-    font-size: 16px;
-  }
+
   .newpricing .child-1 .details .button-1 {
     display: none;
   }
@@ -181,21 +178,12 @@
     margin-bottom: 30px;
     font-weight: bold;
   }
-  .newpricing .child-2 .details .prices {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+ 
   .newpricing .child-2 .details .prices .child {
     display: flex;
   }
-  .newpricing .child-2 .details .prices .child .icon {
-    margin-right: 15px;
-  }
-  .newpricing .child-2 .details .prices .child .icon .i {
-    font-size: 16px;
-    color: #656c7c;
-  }
+
+
   .newpricing .child-2 .details .prices .child .text {
     font-size: 14px;
     font-weight: 500;
