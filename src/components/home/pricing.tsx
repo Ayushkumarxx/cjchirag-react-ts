@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleCheck,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaRegHandPointRight } from "react-icons/fa";
@@ -63,14 +60,14 @@ const PricingSection: React.FC = () => {
       }
     }
   };
-   
-  const handleRedirect = (where : string) => {
+
+  const handleRedirect = (where: string) => {
     if (where === "contact") {
-      window.open("https://forms.gle/ELfkDbexrvDj3DsB9", '_blank'); // Opens the link in a new tab
+      window.open("https://forms.gle/ELfkDbexrvDj3DsB9", "_blank"); // Opens the link in a new tab
     } else if (where === "instagram") {
-      window.open(socialLinks.instagram, '_blank'); // Opens the link in a new tab
+      window.open(socialLinks.instagram, "_blank"); // Opens the link in a new tab
     }
-  } 
+  };
   return (
     <>
       {/* Pricing for Mix Mastering */}
@@ -402,10 +399,18 @@ const PricingSection: React.FC = () => {
                 Mastering with revisions*
               </p>
 
-              <button className="button-1" onClick={() => handleRedirect("instagram")}>
+              <button
+                className="button-1"
+                onClick={() => handleRedirect("instagram")}
+              >
                 Connect with me <IoIosArrowForward className="i" />
               </button>
-              <button className="button-2" onClick={() => handleRedirect("contact")}>Contact</button>
+              <button
+                className="button-2"
+                onClick={() => handleRedirect("contact")}
+              >
+                Contact
+              </button>
             </div>
           </div>
           <hr />
@@ -448,9 +453,6 @@ const PricingSection: React.FC = () => {
                     FULL TRACK MIXING AND MASTERING:- ₹5000 (includes 3
                     revisions only)
                   </div>
-
-                  
-               
                 </div>
                 <div className="child">
                   <div className="icon">
@@ -458,7 +460,9 @@ const PricingSection: React.FC = () => {
                   </div>
                   <div className="text">
                     Note 1: <br />
-                    <span className="notBold">FOR ADDITIONAL REVISION - ₹200</span>
+                    <span className="notBold">
+                      FOR ADDITIONAL REVISION - ₹200
+                    </span>
                   </div>
                 </div>
 
@@ -472,16 +476,14 @@ const PricingSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* <div className="child">
-                <div className="icon">
-                <FontAwesomeIcon icon={faCircleCheck} className="i" />
-                </div>
-                <div className="text">
-                Only Track Mixing - ₹3000 (2 revisions only)
-                </div>
-              </div> */}
+             
               </div>
+              <button className="button-mob" onClick={() => handleRedirect("instagram")}>
+                Connect with me <IoIosArrowForward className="i" />
+              </button>
             </div>
+
+            
           </div>
         </div>
       </section>
