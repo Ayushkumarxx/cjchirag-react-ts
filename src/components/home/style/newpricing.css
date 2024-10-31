@@ -144,6 +144,7 @@
   .newpricing .child-1 .details .text {
     color: #656c7c;
     font-size: 14px;
+    font-weight: 500;
     margin-bottom: 25px;
   }
   .newpricing .child-1 .details .price {
@@ -155,6 +156,7 @@
   .newpricing .child-1 .details .pricetext {
     color: #656c7c;
     font-size: 14px;
+    font-weight: 500;
     margin-bottom: 25px;
   }
 
