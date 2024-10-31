@@ -15,9 +15,10 @@
     border-radius: 100%;
     transition: 0.5s;
     cursor: pointer;
-  }
-  .backToTopBtn:not(:hover) {
     background: #0f0f0f;
+  }
+  .backToTopBtn:hover {
+    background: #1a1a1a;
    
   }
 

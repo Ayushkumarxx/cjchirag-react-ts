@@ -475,13 +475,8 @@ const PricingSection: React.FC = () => {
                     <span className="notBold">MIXED TRACKOUTS - ₹1000</span>
                   </div>
                 </div>
-
-             
               </div>
-             
             </div>
-
-            
           </div>
         </div>
       </section>
