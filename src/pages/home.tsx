@@ -11,11 +11,10 @@ import {
   Fnq,
   Footer,
 } from "../components";
-import { voice } from "../assets/index";
 import { Fade } from "react-awesome-reveal";
 import { FaAngleUp } from "react-icons/fa6";
 const HomePage: React.FC = () => {
-  const [audioPlayed, setAudioPlayed] = useState(false);
+ 
   const [isVisible, setIsVisible] = useState(false);
 
   // Function to handle scroll events
@@ -46,31 +45,9 @@ const HomePage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    const playAudio = () => {
-      if (!audioPlayed) {
-        const audio = new Audio(voice);
-        audio
-          .play()
-          .then(() => {
-            setAudioPlayed(true); // Mark the audio as played
-            console.log("Audio is playing");
-          })
-          .catch((error) => {
-            console.error("Audio playback failed:", error);
-          });
-      }
-    };
+  
+  
 
-    // Listen for user interaction (scroll or click)
-    document.addEventListener("scroll", playAudio);
-    window.addEventListener("click", playAudio);
-
-    return () => {
-      document.removeEventListener("scroll", playAudio);
-      window.removeEventListener("click", playAudio);
-    };
-  }, [audioPlayed]);
   return (
     <>
       <button

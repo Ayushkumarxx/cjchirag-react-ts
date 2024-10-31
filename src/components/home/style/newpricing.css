@@ -162,7 +162,7 @@
           font-size: 16px;
       }
       .newpricing .child-1 .details .button-1{
-       display: block;
+       display: none;
       }
       .newpricing .child-1 .details .button-2{
         display: none;
