@@ -478,9 +478,7 @@ const PricingSection: React.FC = () => {
 
              
               </div>
-              <button className="button-mob" onClick={() => handleRedirect("instagram")}>
-                Connect with me <IoIosArrowForward className="i" />
-              </button>
+             
             </div>
 
             
