@@ -419,6 +419,7 @@ const PricingSection: React.FC = () => {
               <p className="heading">Mixing And Mastering Prices</p>
 
               <div className="prices">
+              <Zoom cascade damping={0.1} triggerOnce>
                 <div className="child">
                   <div className="icon">
                     <FontAwesomeIcon icon={faCircleCheck} className="i" />
@@ -475,6 +476,7 @@ const PricingSection: React.FC = () => {
                     <span className="notBold">MIXED TRACKOUTS - ₹1000</span>
                   </div>
                 </div>
+                </Zoom>
               </div>
             </div>
           </div>
