@@ -2,9 +2,11 @@
   max-width: 100%;
   padding: 20px;
   margin: 20px auto;
-  background-color: #11101d;
+  /* background-color: #11101d; */
+  background: #050506;
   border-radius: 16px;
   display: flex;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .newpricing .child-1 {
