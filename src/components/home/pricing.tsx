@@ -200,6 +200,7 @@ const PricingSection: React.FC = () => {
             modules={[EffectCards]}
             className="mySwiper"
             centeredSlides={true} 
+            initialSlide={1} 
             
           >
             <SwiperSlide>
