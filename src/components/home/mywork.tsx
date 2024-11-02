@@ -33,8 +33,8 @@ const MyWork: React.FC = () => {
         title: "Rockstar blood",
         year: "2023",
         links: {
-          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
-          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          spotify: "https://open.spotify.com/track/4TLARJhyFthl3pQXgyzrgN?si=UzqVu9AQQLi2jC2WVCa-7A&context=spotify%3Aalbum%3A60z5sQLdckYqiBupw3lCXC",
+          apple: "https://music.apple.com/ae/artist/cj-chirag/1743285468",
           youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
@@ -44,7 +44,7 @@ const MyWork: React.FC = () => {
         year: "2024",
         links: {
           spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
-          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          apple: "https://music.apple.com/ae/artist/cj-chirag/1743285468",
           youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
@@ -53,8 +53,8 @@ const MyWork: React.FC = () => {
         title: "Tapstar",
         year: "2023",
         links: {
-          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
-          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          spotify: "https://open.spotify.com/album/6SVa4DiHQAXqXNizGNXzNa?si=ABEcp1J3SkC-zgZY4ZG29A",
+          apple: "https://music.apple.com/ae/artist/cj-chirag/1743285468",
           youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
@@ -63,8 +63,8 @@ const MyWork: React.FC = () => {
         title: "Fame",
         year: "2023",
         links: {
-          spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
-          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          spotify: "https://open.spotify.com/album/0cb0RRekipRtNjbDTaSxAs?si=nOQv75E8RVyiGLGD8OnhEw",
+          apple: "https://music.apple.com/ae/artist/cj-chirag/1743285468",
           youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },
@@ -74,7 +74,7 @@ const MyWork: React.FC = () => {
         year: "2023",
         links: {
           spotify: "https://open.spotify.com/artist/5FcuZLglRfOZQMF0tDPxDV",
-          apple: "hhttps://music.apple.com/ae/artist/cj-chirag/1743285468",
+          apple: "https://music.apple.com/ae/artist/cj-chirag/1743285468",
           youtube: "https://www.youtube.com/channel/UCSdJtejPwxulSLZM-vQdDJA",
         },
       },

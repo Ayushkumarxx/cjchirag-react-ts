@@ -15,103 +15,103 @@ interface Artist {
 
 const artistsData: Artist[] = [
   {
-    name: "CJCHIRAG X KALAM INK",
+    name: "KALAM INK",
     images: {
       img1: admin,
       img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRr7okzZZ0BkJeeEUkIN92LCcXM-H5QuCZg&s",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, KALAM INK.",
   },
   {
-    name: "CJCHIRAG X LOKA",
+    name: "LOKA",
     images: {
       img1: admin,
       img2: "https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1673594254869-Loka.jpg",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, LOKA.",
   },
   {
-    name: "CJCHIRAG X KIDSHOT",
+    name: "KIDSHOT",
     images: {
       img1: admin,
       img2: "https://images.genius.com/72a9f903c916d3f33b843dee4c1352f3.1000x1000x1.jpg",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, KIDSHOT.",
   },
   {
-    name: "CJCHIRAG X BANDZO3RD",
+    name: "BANDZO3RD",
     images: {
       img1: admin,
       img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4OlZrr_2r4pQlV2MhstQbb6AmVvIRvKnSw&s",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, BANDZO3RD.",
   },
   {
-    name: "CJCHIRAG X D'EVIL",
+    name: "D'EVIL",
     images: {
       img1: admin,
       img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBXDRp8uvWtfbnIcV2w1DpCvNJ8xytSW_OhQ&s",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, D'EVIL.",
   },
   {
-    name: "CJCHIRAG X VIJAY DADA",
+    name: "VIJAY DADA",
     images: {
       img1: admin,
       img2: "https://yt3.googleusercontent.com/a-WpvWKCjWgYSIxoE0Kd1_3DDtO5P2zNl0T6-DpIxc43HIVvHz7gHAGjkIt_J0sLKdJsP_T4=s900-c-k-c0x00ffffff-no-rj",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, VIJAY DADA.",
   },
   {
-    name: "CJCHIRAG X NAEZY",
+    name: "NAEZY",
     images: {
       img1: admin,
       img2: "https://img.redbull.com/images/c_crop,x_1025,y_0,h_2624,w_1968/c_fill,w_450,h_600/q_auto:low,f_auto/redbullcom/2020/5/3/bpvj4kkywmv5eusybqnu/naezy-naved-shaikh-mumbai-hip-hop-rapper", 
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, NAEZY.",
   },
   {
-    name: "CJCHIRAG X OFFICIAL BHAGAT",
+    name: "OFFICIAL BHAGAT",
     images: {
       img1: admin,
       img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClf0Ygt9V89LUUQgU66oQ0l5IWm52KBvTjw&s",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, OFFICIAL BHAGAT.",
   },
   {
-    name: "CJCHIRAG X NICK L",
+    name: "NICK L",
     images: {
       img1: admin,
       img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSmLJGMnWajTXSHqhsjA6u2SQ6dLhITnhcw&s",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, NICK L.",
   },
   {
-    name: "CJCHIRAG X RAIYCHU",
+    name: "RAIYCHU",
     images: {
       img1: admin,
       img2: "https://doontoday.com/artist/wp-content/uploads/2021/10/4-3.jpeg",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, RAIYCHU.",
   },
   {
-    name: "CJCHIRAG X ROCKY GLOCK",
+    name: "ROCKY GLOCK",
     images: {
       img1: admin,
       img2: "https://i1.sndcdn.com/avatars-wyilHOcjmiwokRqD-m8LC0Q-t240x240.jpg",
     },
     description:
-      "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
+      "I had the pleasure of collaborating with the talented artist, ROCKY GLOCK.",
   },
 ];
 
@@ -128,7 +128,7 @@ const ArtistCard: React.FC<Artist> = ({ name, images, description }) => {
           <img src={images.img2} alt={name} />
         </div>
       </div>
-      <p className="text">{name}</p>
+      <p className="text">{`CJCHIRAG X ${name}`}</p>
       <p className="desc">{description}</p>
       
     </div>
