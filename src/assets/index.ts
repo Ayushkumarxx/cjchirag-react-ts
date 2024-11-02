@@ -13,7 +13,7 @@ import test6 from "./test-6.jpg";
 import admin from "./admin-2.jpeg";
 import about from "./about-me.jpg";
 import question from "./question.png";
-import voice from "./voice.aac";
+
 
 export {
   gallery1,
@@ -31,5 +31,4 @@ export {
   admin,
   about,
   question,
-  voice
 };
