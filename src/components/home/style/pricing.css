@@ -258,7 +258,8 @@
   }
   .plans_container .box-2-mob{
     display: flex;
-    
+    justify-content: center; /* Center content inside this div */
+    width: 100%; 
   
   }
 
@@ -272,7 +273,7 @@
     scale: 1.01;
   }
   .plans_container .box-2 .plans {
-    width: 90%;
+    width: 100%;
     height: 280px;
   }
   .plans_container .box-2 .plans:hover{
