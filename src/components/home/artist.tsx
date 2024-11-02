@@ -24,7 +24,7 @@ const artistsData: Artist[] = [
       "I've had the privilege of working alongside talented individuals from diverse creative backgrounds.",
   },
   {
-    name: "CJCHIRAG X LOCA",
+    name: "CJCHIRAG X LOKA",
     images: {
       img1: admin,
       img2: "https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1673594254869-Loka.jpg",

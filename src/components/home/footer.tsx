@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
 
   const recentWork = [
     { text: "Kalam Ink", url: "" },
-    { text: "Loca", url: "" },
+    { text: "Loka", url: "" },
     { text: "Killshot", url: "" },
     { text: "D Evil", url: "" },
     { text: "Naezy", url: "" },
