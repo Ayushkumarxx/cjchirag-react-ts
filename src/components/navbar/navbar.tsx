@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
         <div><a href="#work">Work</a></div>
         <div><a href="#about">About</a></div>
         <div><a href="#services">Services</a></div>
+        <div className="mob"><a href="https://forms.gle/ELfkDbexrvDj3DsB9" target="_blank">Contact</a></div>
         
       </div>
       <div className="box-3" onClick={() => handleRedirect()}>

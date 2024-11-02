@@ -74,7 +74,9 @@ nav {
   .hamburger {
     display: none;
   }
-  
+  nav .mob{
+    display: none;
+  }
   /***Stying for small screens***/
   @media screen and (max-width: 800px) {
     nav {
@@ -90,7 +92,7 @@ nav {
     nav .box-3 {
       display: none;
     }
-  
+    nav .mob{display: block;}
     .hamburger {
       display: block;
       cursor: pointer;
