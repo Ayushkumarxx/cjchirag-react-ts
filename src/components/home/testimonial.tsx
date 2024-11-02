@@ -29,26 +29,26 @@ const commentsData: Comment[] = [
       "CJChirag brings a fresh vibe to every track. His seamless blend of beatboxing, production, and mixing makes him a standout in the industry. Highly recommend!",
   },
   {
-    name: "LOCA",
-    username: "@loka_music",
+    name: "Rahul roy",
+    username: "@rahulwanders_",
     profileImage: test3,
-    socialLink: "https://www.instagram.com/loka_music",
+    socialLink: "https://www.instagram.com/rahulwanders_/",
     comment:
       "CJChirag is incredibly versatile, from beatboxing to mixing tracks with precision. His unique sound elevates every project, and his passion shines through in every beat. It’s always a pleasure working with him.",
   },
   {
-    name: "Kalam inkk",
-    username: "@kalam_inkk",
+    name: "Not psycho",
+    username: "@notpsycho_",
     profileImage: test4,
-    socialLink: "https://www.instagram.com/kalam_inkk",
+    socialLink: "https://www.instagram.com/notpsycho_/",
     comment:
       "CJChirag’s music production skills are top-tier. He’s got a great ear for detail and knows exactly how to bring a vision to life.",
   },
   {
-    name: "Mass appeal india",
-    username: "@massappealindia",
+    name: "Praveer ranjan singh",
+    username: "@praveerranjansingh",
     profileImage: test5,
-    socialLink: "https://www.instagram.com/massappealindia",
+    socialLink: "https://www.instagram.com/praveerranjansingh",
     comment:
       "The way CJChirag mixes and creates beats is pure genius—he never misses a beat.",
   },

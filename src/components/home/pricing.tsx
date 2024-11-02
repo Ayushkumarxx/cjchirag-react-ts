@@ -9,55 +9,151 @@ import "./style/pricing_second.css";
 import "./style/newpricing.css";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { socialLinks } from "../../utils/social";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper/modules";
 
 const PricingSection: React.FC = () => {
   const tickRef = useRef<HTMLDivElement>(null);
-  const leaseRef = useRef<HTMLDivElement>(null);
-  const exclusiveRef = useRef<HTMLDivElement>(null);
+  const [tickDirection, setTickDirection] = useState<"left" | "right">("left");
   const [isFadingOut, setIsFadingOut] = useState(false);
+  const [onlyDFade, setOnlyDFade] = useState(false);
   const [priceList, setPriceList] = useState<string[]>(["₹5k", "₹15k", "₹20k"]);
-  const [details, setDetails] = useState([
-    "Non-exclusive rights for affordable beats",
-    "Quality production suitable for various projects",
-    "WAV and MP3 formats included for versatile usage",
-    "Renewal options available to extend access as needed",
-  ]); //
+  const [allOrThis, setAllOrThis] = useState<String>("All plans include");
+  const detailsOptions = {
+    basicEx: [
+      "Exclusive rights, granting full ownership of the beat",
+      "3-4 revisions to tailor the beat to your liking",
+      "Quality production with WAV, MP3, and trackouts included",
+      "Unlimited usage rights for YouTube and other platforms",
+    ],
+    standardEx: [
+      "Exclusive rights, giving you full control over the beat",
+      "4-5 revisions for a refined, polished sound",
+      "Good production with WAV, MP3, and trackouts included",
+      "Usage rights for streaming, radio, and various platforms",
+    ],
+    premiumEx: [
+      "Exclusive rights to the beat, granting full ownership",
+      "Unlimited revisions to tailor the beat to your needs",
+      "Professional-grade production ensuring high-quality sound",
+      "Suitable for commercial use on radio, TV, and YouTube",
+    ],
+
+    basicL: [
+      "Non-exclusive rights with an affordable lease option",
+      "3-4 revisions to shape the beat to your preference",
+      "Decent beat with WAV format included",
+      "Limited rights for streaming and radio; renews annually",
+    ],
+    standardL: [
+      "Non-exclusive rights for versatile usage and enhanced quality",
+      "4-5 revisions for a more refined and customized sound",
+      "Good beat with WAV, MP3, and trackouts included",
+      "Unlimited rights for streaming and radio; renews biennially",
+    ],
+    premiumL: [
+      "Non-exclusive rights with a premium lease experience",
+      "Unlimited revisions for complete customization",
+      "Professional production with high-quality WAV, MP3, trackouts",
+      "Usage rights for all commercial platforms; renews every 3 years",
+    ],
+    allEx: [
+      "Exclusive rights to the beat, granting full ownership",
+      "Unlimited revisions to tailor the beat to your needs",
+      "Professional-grade production ensuring high-quality sound",
+      "Access to a library of unique sounds that elevate",
+    ],
+    allL: [
+      "Non-exclusive rights for affordable beats",
+      "Quality production suitable for various projects",
+      "WAV and MP3 formats included for versatile usage",
+      "Renewal options available to extend access as needed",
+    ],
+  };
+
+  const [details, setDetails] = useState<String[]>(detailsOptions.allL); //
   const handleClick = (direction: "left" | "right") => {
     if (tickRef.current) {
       const tickElement = tickRef.current;
+      setTickDirection(direction);
 
       // Use translateX to move the tick smoothly
       if (direction === "left") {
         setIsFadingOut(true);
+        setOnlyDFade(true);
         tickElement.style.transform = "translateX(0)";
         tickElement.style.width = "100px";
         setTimeout(() => {
+          setAllOrThis("All plans include");
           setPriceList(["₹5k", "₹15k", "₹20k"]);
-          setDetails([
-            "Non-exclusive rights for affordable entry into quality production",
-            "Quality production suitable for various projects",
-            "WAV and MP3 formats included for versatile usage",
-            "Renewal options available to extend access as needed",
-          ]);
-
+          setDetails(detailsOptions.allL);
+          setOnlyDFade(false);
           setIsFadingOut(false);
         }, 500);
       } else {
         setIsFadingOut(true);
+        setOnlyDFade(true);
         tickElement.style.transform = "translateX(90px)"; // Move tick to the right (100px offset for Exclusive)
         tickElement.style.width = "110px";
         setTimeout(() => {
+          setAllOrThis("All plans include");
           setPriceList(["₹45k", "₹55k", "₹70k"]);
-          setDetails([
-            "Exclusive rights to the beat, granting full ownership",
-            "Unlimited revisions to tailor the beat to your needs",
-            "Professional-grade production ensuring high-quality sound",
-            "Access to a library of unique sounds that elevate",
-          ]);
+          setDetails(detailsOptions.allEx);
 
           setIsFadingOut(false);
+          setOnlyDFade(false);
         }, 500);
       }
+    }
+  };
+
+  const handelPricingDetails = (whichCard: string) => {
+    if (tickDirection === "left") {
+      setOnlyDFade(true);
+
+      setTimeout(() => {
+        if (whichCard === "basic") {
+          setDetails(detailsOptions.basicL);
+          setAllOrThis("Basic plans include");
+        }
+        if (whichCard === "standard") {
+          setDetails(detailsOptions.standardL);
+          setAllOrThis("Standard plans include");
+        }
+        if (whichCard === "premium") {
+          setDetails(detailsOptions.premiumL);
+          setAllOrThis("Premium plans include");
+        }
+
+        setOnlyDFade(false);
+      }, 500);
+    }
+    if (tickDirection === "right") {
+      setOnlyDFade(true);
+
+      setTimeout(() => {
+        if (whichCard === "basic") {
+          setDetails(detailsOptions.basicEx);
+          setAllOrThis("Basic plans include");
+        }
+        if (whichCard === "standard") {
+          setDetails(detailsOptions.standardEx);
+          setAllOrThis("Standard plans include");
+        }
+        if (whichCard === "premium") {
+          setDetails(detailsOptions.premiumEx);
+          setAllOrThis("Premium plans include");
+        }
+
+        setOnlyDFade(false);
+      }, 500);
     }
   };
 
@@ -87,26 +183,95 @@ const PricingSection: React.FC = () => {
             </p>
             <div className="ticker-box">
               <div className="tick" ref={tickRef}></div>
-              <div
-                className="child-1"
-                ref={leaseRef}
-                onClick={() => handleClick("left")}
-              >
+              <div className="child-1" onClick={() => handleClick("left")}>
                 Lease
               </div>
-              <div
-                className="child-2"
-                ref={exclusiveRef}
-                onClick={() => handleClick("right")}
-              >
+              <div className="child-2" onClick={() => handleClick("right")}>
                 Exclusive{" "}
               </div>
             </div>
           </Fade>
         </div>
+
+        <div className="box-2 box-2-mob">
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper"
+            centeredSlides={true} 
+          >
+            <SwiperSlide>
+              <div
+                className="plans st-1"
+                onClick={() => handelPricingDetails("basic")}
+              >
+                <div className="child-1">
+                  <div className="head">Basic</div>
+                  <div
+                    className={`price ${isFadingOut ? "fade-out" : "fade-in"}`}
+                  >
+                    <p>
+                      {priceList[0]}
+                      <span>/project</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="child-2">Perfect for small projects</div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="plans st-2"
+                onClick={() => handelPricingDetails("standard")}
+              >
+                <div className="child-1">
+                  <div className="head">
+                    <div>Standard</div>
+                    <div className="ticker">Most popular</div>
+                  </div>
+                  <div
+                    className={`price ${isFadingOut ? "fade-out" : "fade-in"}`}
+                  >
+                    <p>
+                      {priceList[1]}
+                      <span>/project</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="child-2">Perfect for any projects</div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="plans st-3"
+                onClick={() => handelPricingDetails("premium")}
+              >
+                <div className="child-1">
+                  <div className="head">Premium</div>
+                  <div
+                    className={`price ${isFadingOut ? "fade-out" : "fade-in"}`}
+                  >
+                    <p>
+                      {priceList[2]}
+                      <span>/project</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="child-2">Perfect for large projects</div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
         <Fade cascade triggerOnce>
-          <div className="box-2">
-            <div className="plans st-1">
+          <div className="box-2 box-2-pc">
+            <div
+              className="plans st-1"
+              onClick={() => handelPricingDetails("basic")}
+            >
               <div className="child-1">
                 <div className="head">Basic</div>
                 <div
@@ -121,7 +286,10 @@ const PricingSection: React.FC = () => {
               <div className="child-2">Perfect for small projects</div>
             </div>
 
-            <div className="plans st-2">
+            <div
+              className="plans st-2"
+              onClick={() => handelPricingDetails("standard")}
+            >
               <div className="child-1">
                 <div className="head">
                   <div>Standard</div>
@@ -138,7 +306,10 @@ const PricingSection: React.FC = () => {
               </div>
               <div className="child-2">Perfect for any projects</div>
             </div>
-            <div className="plans st-3">
+            <div
+              className="plans st-3"
+              onClick={() => handelPricingDetails("premium")}
+            >
               <div className="child-1">
                 <div className="head">Premium</div>
                 <div
@@ -155,13 +326,15 @@ const PricingSection: React.FC = () => {
           </div>
         </Fade>
         <div className="box-3">
-          <div className="head">All plans include</div>
+          <div className={`head ${onlyDFade ? "fade-out" : "fade-in"}`}>
+            {allOrThis}
+          </div>
           <div className="details">
             <Zoom cascade damping={0.1} triggerOnce>
               <div className="child">
                 <div
                   className={`inner-child  ${
-                    isFadingOut ? "fade-out" : "fade-in"
+                    onlyDFade ? "fade-out" : "fade-in"
                   }`}
                 >
                   <div className="icon">
@@ -170,8 +343,8 @@ const PricingSection: React.FC = () => {
                   <div className="text">{details[0]}</div>
                 </div>
                 <div
-                  className={`inner-child  ${
-                    isFadingOut ? "fade-out" : "fade-in"
+                  className={`inner-child ${
+                    onlyDFade ? "fade-out" : "fade-in"
                   }`}
                 >
                   <div className="icon">
@@ -183,7 +356,7 @@ const PricingSection: React.FC = () => {
               <div className="child">
                 <div
                   className={`inner-child  ${
-                    isFadingOut ? "fade-out" : "fade-in"
+                    onlyDFade ? "fade-out" : "fade-in"
                   }`}
                 >
                   <div className="icon">
@@ -193,7 +366,7 @@ const PricingSection: React.FC = () => {
                 </div>
                 <div
                   className={`inner-child  ${
-                    isFadingOut ? "fade-out" : "fade-in"
+                    onlyDFade ? "fade-out" : "fade-in"
                   }`}
                 >
                   <div className="icon">
@@ -393,7 +566,9 @@ const PricingSection: React.FC = () => {
                 Discover the best pricing for your project{" "}
               </p>
 
-              <p className="price">₹1500-₹5000</p>
+              <p className="price">
+                <del>₹7000</del> ₹5000
+              </p>
               <p className="pricetext">
                 Track/Vocal and <br />
                 Mastering with revisions*
@@ -419,63 +594,63 @@ const PricingSection: React.FC = () => {
               <p className="heading">Mixing And Mastering Prices</p>
 
               <div className="prices">
-              <Zoom cascade damping={0.1} triggerOnce>
-                <div className="child">
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                <Zoom cascade damping={0.1} triggerOnce>
+                  <div className="child">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                    </div>
+                    <div className="text">
+                      ONLY MASTERING:- ₹2000rs (2 revisions only)
+                    </div>
                   </div>
-                  <div className="text">
-                    ONLY MASTERING:- ₹2000rs (2 revisions only)
-                  </div>
-                </div>
 
-                <div className="child">
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                  <div className="child">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                    </div>
+                    <div className="text">
+                      Only Vocal Mixing - ₹1500rs (2 revisions only)
+                    </div>
                   </div>
-                  <div className="text">
-                    Only Vocal Mixing - ₹1500rs (2 revisions only)
-                  </div>
-                </div>
 
-                <div className="child">
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                  <div className="child">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                    </div>
+                    <div className="text">
+                      Only Track Mixing - ₹3000 (2 revisions only)
+                    </div>
                   </div>
-                  <div className="text">
-                    Only Track Mixing - ₹3000 (2 revisions only)
+                  <div className="child">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                    </div>
+                    <div className="text">
+                      FULL TRACK MIXING AND MASTERING:- ₹5000 (includes 3
+                      revisions only)
+                    </div>
                   </div>
-                </div>
-                <div className="child">
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faCircleCheck} className="i" />
+                  <div className="child">
+                    <div className="icon">
+                      <FaRegHandPointRight className="i" />
+                    </div>
+                    <div className="text">
+                      Note 1: <br />
+                      <span className="notBold">
+                        FOR ADDITIONAL REVISION - ₹200
+                      </span>
+                    </div>
                   </div>
-                  <div className="text">
-                    FULL TRACK MIXING AND MASTERING:- ₹5000 (includes 3
-                    revisions only)
-                  </div>
-                </div>
-                <div className="child">
-                  <div className="icon">
-                    <FaRegHandPointRight className="i" />
-                  </div>
-                  <div className="text">
-                    Note 1: <br />
-                    <span className="notBold">
-                      FOR ADDITIONAL REVISION - ₹200
-                    </span>
-                  </div>
-                </div>
 
-                <div className="child">
-                  <div className="icon">
-                    <FaRegHandPointRight className="i" />
+                  <div className="child">
+                    <div className="icon">
+                      <FaRegHandPointRight className="i" />
+                    </div>
+                    <div className="text">
+                      Note 1: <br />
+                      <span className="notBold">MIXED TRACKOUTS - ₹1000</span>
+                    </div>
                   </div>
-                  <div className="text">
-                    Note 1: <br />
-                    <span className="notBold">MIXED TRACKOUTS - ₹1000</span>
-                  </div>
-                </div>
                 </Zoom>
               </div>
             </div>

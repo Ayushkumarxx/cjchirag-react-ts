@@ -55,7 +55,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
+
 .newpricing .child-1 .details .button-2 {
   border: 1px solid #e2e8f0;
   width: 200px;
@@ -65,11 +68,13 @@
   color: #e2e8f0;
   font-size: 16px;
   border-radius: 100px;
-
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
 }
+
 .newpricing .child-2 {
   width: 60%;
 }

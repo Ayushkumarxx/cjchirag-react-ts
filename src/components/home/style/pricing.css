@@ -177,6 +177,13 @@
   rotate: 5deg;
 }
 
+.plans_container .box-2-pc {
+  display: flex;
+}
+.plans_container .box-2-mob{
+  display: none;
+}
+
 .plans_container .box-3 {
   display: flex;
   flex-direction: column;
@@ -189,7 +196,13 @@
   font-weight: 600;
   color: #656c7c;
   margin-bottom: 40px;
+  transition: 0.5s;
 }
+
+
+
+
+
 
 .plans_container .box-3 .details {
   width: 50%;
@@ -216,6 +229,7 @@
 
 /***Stying for small screens***/
 @media screen and (max-width: 800px) {
+ 
   .plans_container .gardient-1 {
     display: block;
     background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
@@ -237,13 +251,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .plans_container .box-2-pc {
+    display: none;
+  }
+  .plans_container .box-2-mob{
+    display: flex;
+    
+  
   }
 
+  .plans_container .mySwiper {
+    width: 90%;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+  }
+  .plans_container .mySwiper:hover {
+    cursor: grab;
+    scale: 1.01;
+  }
   .plans_container .box-2 .plans {
     width: 90%;
     height: 280px;
   }
-
+  .plans_container .box-2 .plans:hover{
+    scale: none;
+  }
   .plans_container .box-2 .plans .price p {
     font-size: 42px;
     font-weight: bold;

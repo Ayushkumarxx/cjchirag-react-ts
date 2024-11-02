@@ -17,12 +17,12 @@ const accordionItems: { heading: string; description: string }[] = [
   {
     heading: "Why would one choose me?",
     description:
-      "You should choose me for my innovative approach, extensive industry experience, and youthful energy. My ability to blend creative beatboxing with professional production ensures a unique sound that sets your project apart.",
+      "You should choose me for my innovative approach, extensive industry experience, and youthful energy. My ability to blend creativity with professional production ensures a unique outcome that sets your project apart.",
   },
   {
     heading: "What type of software do I use?",
     description:
-      "I use a range of industry-standard software, including digital audio workstations (DAWs) like Ableton Live, FL Studio, and Logic Pro, along with various plugins and sound libraries to craft high-quality music.",
+      "I work with industry-standard software, primarily FL Studio, along with an extensive collection of plugins and sound libraries. This setup allows me to craft high-quality, polished music tailored to meet your project's unique needs.",
   },
 ];
 
