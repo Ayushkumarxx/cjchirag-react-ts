@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="divider"></div>
         <div className="box">
-          <div className="heading">10,000+</div>
+          <div className="heading">100,000+</div>
           <div className="text">Spotify plays</div>
         </div>
       </section>
