@@ -1,45 +1,42 @@
-
 /* Style for scroll-top button */
 .backToTopBtn {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 10;
-    height: 50px;
-    width: 50px;
-    font-size: 20px;
-    display: grid;
-    place-items: center;
-    border: none;
-    color: #cccccc;
-    border-radius: 100%;
-    transition: 0.5s;
-    cursor: pointer;
-    background: #0f0f0f;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-  }
-  .backToTopBtn:hover {
-    background: #1a1a1a;
-   
-  }
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  border: none;
+  color: #cccccc;
+  border-radius: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+  background: #0f0f0f;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.backToTopBtn:hover {
+  background: #1a1a1a;
+}
 
-  .backToTopBtn.active {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .backToTopBtn:not(.active) {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
+.backToTopBtn.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.backToTopBtn:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
-  /***Stying for small screens***/
-@media screen and (max-width: 800px){
-
-    .backToTopBtn{
-        bottom: 40px;
-        right: 20px;
-    }
+/***Stying for small screens***/
+@media screen and (max-width: 800px) {
+  .backToTopBtn {
+    bottom: 40px;
+    right: 20px;
+  }
 }

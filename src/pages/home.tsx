@@ -14,7 +14,6 @@ import {
 import { Fade } from "react-awesome-reveal";
 import { FaAngleUp } from "react-icons/fa6";
 const HomePage: React.FC = () => {
- 
   const [isVisible, setIsVisible] = useState(false);
 
   // Function to handle scroll events
@@ -45,24 +44,19 @@ const HomePage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  
-  
-
   return (
     <>
       <button
         className={`backToTopBtn ${isVisible ? "active" : ""}`} // Add 'active' class based on visibility
         onClick={handleScrollToTop}
-       
       >
         <FaAngleUp /> {/* Using the imported icon */}
       </button>
       {/* nav section */}
 
       <Navbar />
-
+      {/* hero section  */}
       <Fade>
-        {/* hero section  */}
         <HeroSection />
       </Fade>
 
