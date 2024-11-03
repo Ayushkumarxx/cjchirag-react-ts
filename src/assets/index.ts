@@ -1,6 +1,6 @@
-import gallery1 from "./gallery-1-min.jpg";
+import gallery1 from "./gallery-1.jpg";
 import gallery2 from "./gallery-2.jpg";
-import gallery3 from "./gallery-3-min.jpg";
+import gallery3 from "./gallery-3.jpg";
 import gallery4 from "./gallery-4.jpg";
 import gallery5 from "./gallery-5.jpg";
 import home from "./home.jpeg";
@@ -10,8 +10,8 @@ import test3 from "./test-3.jpg";
 import test4 from "./test-4.jpg";
 import test5 from "./test-5.jpg";
 import test6 from "./test-6.jpg";
-import admin from "./admin-2-min.jpeg";
-import about from "./about-me.jpeg";
+import admin from "./admin-2.jpeg";
+import about from "./about-me-min.jpeg";
 import question from "./question.png";
 
 
