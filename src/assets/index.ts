@@ -11,7 +11,7 @@ import test4 from "./test-4.jpg";
 import test5 from "./test-5.jpg";
 import test6 from "./test-6.jpg";
 import admin from "./admin-2.jpeg";
-import about from "./about-me-min.jpeg";
+import about from "./about-me.jpeg";
 import question from "./question.png";
 
 
