@@ -139,16 +139,31 @@ const HomePage: React.FC = () => {
     //   "-=0.2"
     // );
 
-    timeline.to(
-      loderRef.current,
-      {
-        opacity: 0,
-        scale: 3,
-        duration: 1,
-        display: "none",
-      },
-      "-=0.2"
-    );
+    if (window.innerWidth < 600) {
+      timeline.to(
+        loderRef.current,
+        {
+          opacity: 0,
+          scale: 1.5,
+          duration: 1,
+          display: "none",
+        },
+        
+      );
+    } else {
+      timeline.to(
+        loderRef.current,
+        {
+          opacity: 0,
+          scale: 3,
+          duration: 1,
+          display: "none",
+        },
+        
+      );
+    }
+
+   
   }, []);
 
   return (
