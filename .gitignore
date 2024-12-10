@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 firebase.ts
-contact.tsx
-contact.css
