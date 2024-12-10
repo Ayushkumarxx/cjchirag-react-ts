@@ -178,6 +178,7 @@ const HomePage: React.FC = () => {
       </button>
 
       {/* loder */}
+      
 
       <div className="loder-overlay" ref={loderRef}>
         <div className="second-container" ref={secondContainerRef}>
@@ -197,7 +198,6 @@ const HomePage: React.FC = () => {
         <div className="main-text" ref={mainTextRef}>
           <span>C</span>
           <span>J</span>
-         
           <span>C</span>
           <span>H</span>
           <span>I</span>

@@ -19,13 +19,13 @@
   
   .loder-overlay .first-type {
    
-    background-color: rgb(106, 152, 217) ;
+    background-color: rgb(45, 84, 140) ;
     z-index: 1; /* Lower layer */
   }
   
   .loder-overlay .second-type {
     z-index: 2; 
-    background: #100950;
+    background: #0e0849;
   
   }
   
