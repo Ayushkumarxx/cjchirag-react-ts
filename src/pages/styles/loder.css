@@ -19,7 +19,7 @@
   
   .loder-overlay .first-type {
    
-    background-color: rgb(45, 84, 140) ;
+    background-color: rgb(0, 0, 0) ;
     z-index: 1; /* Lower layer */
   }
   

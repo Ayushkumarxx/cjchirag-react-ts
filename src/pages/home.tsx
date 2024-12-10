@@ -65,7 +65,7 @@ const HomePage: React.FC = () => {
         duration: 0.6,
         stagger: 0.15, // Fixed stagger for each element
       },
-      0.5
+
     );
 
     timeline.fromTo(
@@ -102,31 +102,31 @@ const HomePage: React.FC = () => {
       "<"
     );
 
-    // timeline.to(
-    //   mainTextRef.current?.children ?? [],
-    //   {
-    //     duration: 0.4,
-    //     rotate: "-90deg",
-    //     y: -50,
-    //     stagger: {
-    //       amount: 0.4,
+    timeline.to(
+      mainTextRef.current?.children ?? [],
+      {
+        duration: 0.4,
+        rotate: "-90deg",
+        y: -50,
+        stagger: {
+          amount: 0.4,
          
-    //     },
-    //     opacity: 0,
-    //     ease: "power3.inOut",
-    //   },
-    //   "+=0.1"
-    // );
+        },
+        opacity: 0,
+        ease: "power3.inOut",
+      },
+      "+=0.1"
+    );
 
-    // timeline.to(
-    //   secondContainerRef.current?.children ?? [],
-    //   {
-    //     y: "-100%",
-    //     duration: 0.5, 
-    //     stagger: 0.15, 
-    //   },
-    //   "-=0.2"
-    // );
+    timeline.to(
+      secondContainerRef.current?.children ?? [],
+      {
+        y: "-100%",
+        duration: 0.5, 
+        stagger: 0.15, 
+      },
+      "-=0.2"
+    );
 
 
     // timeline.to(
@@ -149,7 +149,7 @@ const HomePage: React.FC = () => {
           transformOrigin: "center center",
           display: "none",
         },
-        
+        ">"
       );
     } else {
       timeline.to(
@@ -160,7 +160,7 @@ const HomePage: React.FC = () => {
           transformOrigin: "center center",
           duration: 1,
           display: "none",
-        },
+        },">"
         
       );
     }
