@@ -144,8 +144,9 @@ const HomePage: React.FC = () => {
         loderRef.current,
         {
           opacity: 0,
-          scale: 1.5,
+          scale: 1.4,
           duration: 1,
+          transformOrigin: "center center",
           display: "none",
         },
         
@@ -156,6 +157,7 @@ const HomePage: React.FC = () => {
         {
           opacity: 0,
           scale: 3,
+          transformOrigin: "center center",
           duration: 1,
           display: "none",
         },
