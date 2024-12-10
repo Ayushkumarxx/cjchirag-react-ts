@@ -58,11 +58,9 @@ const HomePage: React.FC = () => {
     timeline.fromTo(
       firstContainerRef.current?.children ?? [],
       {
-        y: "100%",
-        opacity: 1 ,
+        y: "100%", // Start from 100% below the container
       },
       {
-        opacity: 0,
         y: "0%", // Animate to 0% (its original position)
         duration: 0.4,
         stagger: 0.1, // Fixed stagger for each element
@@ -125,25 +123,21 @@ const HomePage: React.FC = () => {
       {
         y: "-100%",
         duration: 0.3, 
-        stagger: 0.1,
-     
+        stagger: 0.1, 
       },
       "-=0.2"
     );
+
 
     timeline.to(
       firstContainerRef.current?.children ?? [],
       {
         y: "-100%", 
-        
-      
         duration: 0.3,
-        
+        stagger: 0.1, 
       },
       "-=0.2"
     );
-
-    
 
     timeline.to(
       loderRef.current,
