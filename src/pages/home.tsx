@@ -62,8 +62,8 @@ const HomePage: React.FC = () => {
       },
       {
         y: "0%", // Animate to 0% (its original position)
-        duration: 0.4,
-        stagger: 0.1, // Fixed stagger for each element
+        duration: 0.6,
+        stagger: 0.15, // Fixed stagger for each element
       },
       0.5
     );
@@ -75,8 +75,8 @@ const HomePage: React.FC = () => {
       },
       {
         y: "0%",
-        duration: 0.4,
-        stagger: 0.1,
+        duration: 0.6,
+        stagger: 0.15,
       },
       "-=0.4"
     );
@@ -122,8 +122,8 @@ const HomePage: React.FC = () => {
       secondContainerRef.current?.children ?? [],
       {
         y: "-100%",
-        duration: 0.3, 
-        stagger: 0.1, 
+        duration: 0.5, 
+        stagger: 0.15, 
       },
       "-=0.2"
     );
@@ -133,8 +133,8 @@ const HomePage: React.FC = () => {
       firstContainerRef.current?.children ?? [],
       {
         y: "-100%", 
-        duration: 0.3,
-        stagger: 0.1, 
+        duration: 0.5,
+        stagger: 0.15, 
       },
       "-=0.2"
     );
