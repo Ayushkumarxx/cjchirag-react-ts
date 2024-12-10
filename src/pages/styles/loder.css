@@ -1,0 +1,97 @@
+.loder-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between; /* Space out the elements horizontally */
+    z-index: 10;
+  }
+  
+  .loder-overlay .first-type,
+  .loder-overlay .second-type {
+    position: absolute; 
+    height: 100%;
+    width: 25%;
+  }
+  
+  .loder-overlay .first-type {
+   
+    background-color: rgb(106, 152, 217) ;
+    z-index: 1; /* Lower layer */
+  }
+  
+  .loder-overlay .second-type {
+    z-index: 2; 
+    background: #030022;
+  
+  }
+  
+  .loder-overlay .second-type:nth-child(1) {
+
+    left: 0%; 
+  }
+  
+  .loder-overlay .second-type:nth-child(2) {
+  
+    left: 25%;
+  }
+  
+  .loder-overlay .second-type:nth-child(3) {
+
+    left: 50%;
+  }
+  
+  .loder-overlay .second-type:nth-child(4) {
+
+    left: 75%;
+  }
+  
+  .loder-overlay .second-type:nth-child(5) {
+    left: 80%;
+  }
+  
+  .loder-overlay .first-type:nth-child(1) {
+    left: 0%;
+  }
+  
+  .loder-overlay .first-type:nth-child(2) {
+    left: 25%;
+  }
+  
+  .loder-overlay .first-type:nth-child(3) {
+    left: 50%;
+  }
+  
+  .loder-overlay .first-type:nth-child(4) {
+    left: 75%;
+  }
+  
+  .loder-overlay .first-type:nth-child(5) {
+    left: 80%;
+  }
+  
+  .loder-overlay .main-text{
+    
+    overflow: hidden;
+    text-wrap: nowrap;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  
+  .loder-overlay .main-text span{
+    font-size: 40px;
+    font-weight: bold;
+    color: #9398ff;
+    letter-spacing: 15px;
+    text-align: center;
+    font-family: "Poppins", cursive;
+    position: relative; 
+    display: inline-block;
+  }

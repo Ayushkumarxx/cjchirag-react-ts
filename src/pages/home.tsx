@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./styles/home.css";
+import "./styles/loder.css";
+import { gsap } from "gsap";
 import {
   Navbar,
   HeroSection,
@@ -11,7 +13,7 @@ import {
   Fnq,
   Footer,
 } from "../components";
-import { Fade } from "react-awesome-reveal";
+
 import { FaAngleUp } from "react-icons/fa6";
 const HomePage: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,6 +46,110 @@ const HomePage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  //animation
+  const loderRef = useRef<HTMLDivElement | null>(null);
+  const mainTextRef = useRef<HTMLDivElement | null>(null);
+  const firstContainerRef = useRef<HTMLDivElement | null>(null);
+  const secondContainerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const timeline = gsap.timeline();
+
+    timeline.fromTo(
+      firstContainerRef.current?.children ?? [],
+      {
+        y: "100%", // Start from 100% below the container
+      },
+      {
+        y: "0%", // Animate to 0% (its original position)
+        duration: 0.4,
+        stagger: 0.1, // Fixed stagger for each element
+      },
+      0.5
+    );
+
+    timeline.fromTo(
+      secondContainerRef.current?.children ?? [],
+      {
+        y: "100%",
+      },
+      {
+        y: "0%",
+        duration: 0.4,
+        stagger: 0.1,
+      },
+      "-=0.4"
+    );
+
+    timeline.fromTo(
+      mainTextRef.current?.children ?? [],
+      {
+        opacity: 0,
+        y: 50,
+        rotate: "90deg",
+      },
+      {
+        duration: 0.8,
+        color: "white",
+        stagger: {
+          amount: 0.8,
+        },
+        rotate: "0deg",
+        y: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+      },
+      "<"
+    );
+
+    timeline.to(
+      mainTextRef.current?.children ?? [],
+      {
+        duration: 0.4,
+        rotate: "-90deg",
+        y: -50,
+        stagger: {
+          amount: 0.4,
+         
+        },
+        opacity: 0,
+        ease: "power3.inOut",
+      },
+      "+=0.1"
+    );
+
+    timeline.to(
+      secondContainerRef.current?.children ?? [],
+      {
+        y: "-100%",
+        duration: 0.3, 
+        stagger: 0.1, 
+      },
+      "-=0.2"
+    );
+
+
+    timeline.to(
+      firstContainerRef.current?.children ?? [],
+      {
+        y: "-100%", 
+        duration: 0.3,
+        stagger: 0.1, 
+      },
+      "-=0.2"
+    );
+
+    timeline.to(
+      loderRef.current,
+      {
+        opacity: 0,
+        duration: 0.5,
+        display: "none",
+      },
+      "-=0.2"
+    );
+  }, []);
+
   return (
     <>
       <button
@@ -52,13 +158,43 @@ const HomePage: React.FC = () => {
       >
         <FaAngleUp /> {/* Using the imported icon */}
       </button>
+
+      {/* loder */}
+
+      <div className="loder-overlay" ref={loderRef}>
+        <div className="second-container" ref={secondContainerRef}>
+          <div className="second-type"></div>
+          <div className="second-type"></div>
+          <div className="second-type"></div>
+          <div className="second-type"></div>
+        </div>
+
+        <div className="first-container" ref={firstContainerRef}>
+          <div className="first-type"></div>
+          <div className="first-type"></div>
+          <div className="first-type"></div>
+          <div className="first-type"></div>
+        </div>
+
+        <div className="main-text" ref={mainTextRef}>
+          <span>C</span>
+          <span>J</span>
+         
+          <span>C</span>
+          <span>H</span>
+          <span>I</span>
+          <span>R</span>
+          <span>A</span>
+          <span>G</span>
+        </div>
+      </div>
+
       {/* nav section */}
 
       <Navbar />
       {/* hero section  */}
-      <Fade>
-        <HeroSection />
-      </Fade>
+
+      <HeroSection />
 
       {/* my recent work */}
       <MyWork />
