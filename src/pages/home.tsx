@@ -102,21 +102,21 @@ const HomePage: React.FC = () => {
       "<"
     );
 
-    timeline.to(
-      mainTextRef.current?.children ?? [],
-      {
-        duration: 0.4,
-        rotate: "-90deg",
-        y: -50,
-        stagger: {
-          amount: 0.4,
+    // timeline.to(
+    //   mainTextRef.current?.children ?? [],
+    //   {
+    //     duration: 0.4,
+    //     rotate: "-90deg",
+    //     y: -50,
+    //     stagger: {
+    //       amount: 0.4,
          
-        },
-        opacity: 0,
-        ease: "power3.inOut",
-      },
-      "+=0.1"
-    );
+    //     },
+    //     opacity: 0,
+    //     ease: "power3.inOut",
+    //   },
+    //   "+=0.1"
+    // );
 
     // timeline.to(
     //   secondContainerRef.current?.children ?? [],
@@ -143,7 +143,8 @@ const HomePage: React.FC = () => {
       loderRef.current,
       {
         opacity: 0,
-        duration: 0.5,
+        scale: 3,
+        duration: 1,
         display: "none",
       },
       "-=0.2"
