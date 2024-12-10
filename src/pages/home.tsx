@@ -118,26 +118,26 @@ const HomePage: React.FC = () => {
       "+=0.1"
     );
 
-    timeline.to(
-      secondContainerRef.current?.children ?? [],
-      {
-        y: "-100%",
-        duration: 0.5, 
-        stagger: 0.15, 
-      },
-      "-=0.2"
-    );
+    // timeline.to(
+    //   secondContainerRef.current?.children ?? [],
+    //   {
+    //     y: "-100%",
+    //     duration: 0.5, 
+    //     stagger: 0.15, 
+    //   },
+    //   "-=0.2"
+    // );
 
 
-    timeline.to(
-      firstContainerRef.current?.children ?? [],
-      {
-        y: "-100%", 
-        duration: 0.5,
-        stagger: 0.15, 
-      },
-      "-=0.2"
-    );
+    // timeline.to(
+    //   firstContainerRef.current?.children ?? [],
+    //   {
+    //     y: "-100%", 
+    //     duration: 0.5,
+    //     stagger: 0.15, 
+    //   },
+    //   "-=0.2"
+    // );
 
     timeline.to(
       loderRef.current,
