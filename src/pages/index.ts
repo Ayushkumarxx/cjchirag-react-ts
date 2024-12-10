@@ -1,4 +1,4 @@
 import HomePage from "./home";
-import ContactPage from "./contact";
+// import ContactPage from "./contact";
 
-export { HomePage, ContactPage };
+export { HomePage, };
