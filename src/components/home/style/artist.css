@@ -36,6 +36,8 @@
   justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 20px;
+  border-radius: 500px;
+
   overflow: hidden; /* Prevent overflow if content is too wide */
 }
 
@@ -111,6 +113,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    border-radius: 0px;
   }
 
   .artist_container .main-box .content {

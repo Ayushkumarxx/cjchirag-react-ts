@@ -33,6 +33,22 @@
   pointer-events: none;
 }
 
+.check-new-song {
+
+
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  border: none;
+  color: #cccccc;
+  border-radius: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /***Stying for small screens***/
 @media screen and (max-width: 800px) {
   .backToTopBtn {

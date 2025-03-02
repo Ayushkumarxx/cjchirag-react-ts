@@ -51,6 +51,7 @@ const HomePage: React.FC = () => {
   const mainTextRef = useRef<HTMLDivElement | null>(null);
   const firstContainerRef = useRef<HTMLDivElement | null>(null);
   const secondContainerRef = useRef<HTMLDivElement | null>(null);
+  
 
   useEffect(() => {
     const timeline = gsap.timeline();
@@ -206,6 +207,8 @@ const HomePage: React.FC = () => {
           <span>G</span>
         </div>
       </div>
+
+
 
       {/* nav section */}
 

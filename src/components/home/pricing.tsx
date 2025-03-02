@@ -1,161 +1,166 @@
-import React, { useRef, useState } from "react";
+// import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FaPlane, FaCheck } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaRegCircleCheck } from "react-icons/fa6";
+// import { RiSpeakerFill } from "react-icons/ri";
+// import { FaSignature } from "react-icons/fa6";
+import { PiSignatureBold } from "react-icons/pi";
+// import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaRegHandPointRight } from "react-icons/fa";
 import "./style/pricing.css";
 import "./style/pricing_second.css";
 import "./style/newpricing.css";
+import "./style/new_pricing.css";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { socialLinks } from "../../utils/social";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
 
 // import required modules
-import { EffectCards } from "swiper/modules";
+// import { EffectCards } from "swiper/modules";
 
 const PricingSection: React.FC = () => {
-  const tickRef = useRef<HTMLDivElement>(null);
-  const [tickDirection, setTickDirection] = useState<"left" | "right">("left");
-  const [isFadingOut, setIsFadingOut] = useState(false);
-  const [onlyDFade, setOnlyDFade] = useState(false);
-  const [priceList, setPriceList] = useState<string[]>(["₹5k", "₹15k", "₹20k"]);
-  const [allOrThis, setAllOrThis] = useState<String>("All plans include");
-  const detailsOptions = {
-    basicEx: [
-      "Exclusive rights, granting full ownership of the beat",
-      "3-4 revisions to tailor the beat to your liking",
-      "Quality production with WAV, MP3, and trackouts included",
-      "Unlimited usage rights for YouTube and other platforms",
-    ],
-    standardEx: [
-      "Exclusive rights, giving you full control over the beat",
-      "4-5 revisions for a refined, polished sound",
-      "Good production with WAV, MP3, and trackouts included",
-      "Usage rights for streaming, radio, and various platforms",
-    ],
-    premiumEx: [
-      "Exclusive rights to the beat, granting full ownership",
-      "Unlimited revisions to tailor the beat to your needs",
-      "Professional-grade production ensuring high-quality sound",
-      "Suitable for commercial use on radio, TV, and YouTube",
-    ],
+  // const tickRef = useRef<HTMLDivElement>(null);
+  // const [tickDirection, setTickDirection] = useState<"left" | "right">("left");
+  // const [isFadingOut, setIsFadingOut] = useState(false);
+  // const [onlyDFade, setOnlyDFade] = useState(false);
+  // const [priceList, setPriceList] = useState<string[]>(["₹5k", "₹15k", "₹20k"]);
+  // const [allOrThis, setAllOrThis] = useState<String>("All plans include");
+  // const detailsOptions = {
+  //   basicEx: [
+  //     "Exclusive rights, granting full ownership of the beat",
+  //     "3-4 revisions to tailor the beat to your liking",
+  //     "Quality production with WAV, MP3, and trackouts included",
+  //     "Unlimited usage rights for YouTube and other platforms",
+  //   ],
+  //   standardEx: [
+  //     "Exclusive rights, giving you full control over the beat",
+  //     "4-5 revisions for a refined, polished sound",
+  //     "Good production with WAV, MP3, and trackouts included",
+  //     "Usage rights for streaming, radio, and various platforms",
+  //   ],
+  //   premiumEx: [
+  //     "Exclusive rights to the beat, granting full ownership",
+  //     "Unlimited revisions to tailor the beat to your needs",
+  //     "Professional-grade production ensuring high-quality sound",
+  //     "Suitable for commercial use on radio, TV, and YouTube",
+  //   ],
 
-    basicL: [
-      "Non-exclusive rights with an affordable lease option",
-      "3-4 revisions to shape the beat to your preference",
-      "Decent beat with WAV format included",
-      "Limited rights for streaming and radio; renews annually",
-    ],
-    standardL: [
-      "Non-exclusive rights for versatile usage and enhanced quality",
-      "4-5 revisions for a more refined and customized sound",
-      "Good beat with WAV, MP3, and trackouts included",
-      "Unlimited rights for streaming and radio; renews biennially",
-    ],
-    premiumL: [
-      "Non-exclusive rights with a premium lease experience",
-      "Unlimited revisions for complete customization",
-      "Professional production with high-quality WAV, MP3, trackouts",
-      "Usage rights for all commercial platforms; renews every 3 years",
-    ],
-    allEx: [
-      "Exclusive rights to the beat, granting full ownership",
-      "Unlimited revisions to tailor the beat to your needs",
-      "Professional-grade production ensuring high-quality sound",
-      "Access to a library of unique sounds that elevate",
-    ],
-    allL: [
-      "Non-exclusive rights for affordable beats",
-      "Quality production suitable for various projects",
-      "WAV and MP3 formats included for versatile usage",
-      "Renewal options available to extend access as needed",
-    ],
-  };
+  //   basicL: [
+  //     "Non-exclusive rights with an affordable lease option",
+  //     "3-4 revisions to shape the beat to your preference",
+  //     "Decent beat with WAV format included",
+  //     "Limited rights for streaming and radio; renews annually",
+  //   ],
+  //   standardL: [
+  //     "Non-exclusive rights for versatile usage and enhanced quality",
+  //     "4-5 revisions for a more refined and customized sound",
+  //     "Good beat with WAV, MP3, and trackouts included",
+  //     "Unlimited rights for streaming and radio; renews biennially",
+  //   ],
+  //   premiumL: [
+  //     "Non-exclusive rights with a premium lease experience",
+  //     "Unlimited revisions for complete customization",
+  //     "Professional production with high-quality WAV, MP3, trackouts",
+  //     "Usage rights for all commercial platforms; renews every 3 years",
+  //   ],
+  //   allEx: [
+  //     "Exclusive rights to the beat, granting full ownership",
+  //     "Unlimited revisions to tailor the beat to your needs",
+  //     "Professional-grade production ensuring high-quality sound",
+  //     "Access to a library of unique sounds that elevate",
+  //   ],
+  //   allL: [
+  //     "Non-exclusive rights for affordable beats",
+  //     "Quality production suitable for various projects",
+  //     "WAV and MP3 formats included for versatile usage",
+  //     "Renewal options available to extend access as needed",
+  //   ],
+  // };
 
-  const [details, setDetails] = useState<String[]>(detailsOptions.allL); //
-  const handleClick = (direction: "left" | "right") => {
-    if (tickRef.current) {
-      const tickElement = tickRef.current;
-      setTickDirection(direction);
+  // const [details, setDetails] = useState<String[]>(detailsOptions.allL); //
+  // const handleClick = (direction: "left" | "right") => {
+  //   if (tickRef.current) {
+  //     const tickElement = tickRef.current;
+  //     setTickDirection(direction);
 
-      // Use translateX to move the tick smoothly
-      if (direction === "left") {
-        setIsFadingOut(true);
-        setOnlyDFade(true);
-        tickElement.style.transform = "translateX(0)";
-        tickElement.style.width = "100px";
-        setTimeout(() => {
-          setAllOrThis("All plans include");
-          setPriceList(["₹5k", "₹15k", "₹20k"]);
-          setDetails(detailsOptions.allL);
-          setOnlyDFade(false);
-          setIsFadingOut(false);
-        }, 500);
-      } else {
-        setIsFadingOut(true);
-        setOnlyDFade(true);
-        tickElement.style.transform = "translateX(90px)"; // Move tick to the right (100px offset for Exclusive)
-        tickElement.style.width = "110px";
-        setTimeout(() => {
-          setAllOrThis("All plans include");
-          setPriceList(["₹45k", "₹55k", "₹70k"]);
-          setDetails(detailsOptions.allEx);
+  //     // Use translateX to move the tick smoothly
+  //     if (direction === "left") {
+  //       setIsFadingOut(true);
+  //       setOnlyDFade(true);
+  //       tickElement.style.transform = "translateX(0)";
+  //       tickElement.style.width = "100px";
+  //       setTimeout(() => {
+  //         setAllOrThis("All plans include");
+  //         setPriceList(["₹5k", "₹15k", "₹20k"]);
+  //         setDetails(detailsOptions.allL);
+  //         setOnlyDFade(false);
+  //         setIsFadingOut(false);
+  //       }, 500);
+  //     } else {
+  //       setIsFadingOut(true);
+  //       setOnlyDFade(true);
+  //       tickElement.style.transform = "translateX(90px)"; // Move tick to the right (100px offset for Exclusive)
+  //       tickElement.style.width = "110px";
+  //       setTimeout(() => {
+  //         setAllOrThis("All plans include");
+  //         setPriceList(["₹45k", "₹55k", "₹70k"]);
+  //         setDetails(detailsOptions.allEx);
 
-          setIsFadingOut(false);
-          setOnlyDFade(false);
-        }, 500);
-      }
-    }
-  };
+  //         setIsFadingOut(false);
+  //         setOnlyDFade(false);
+  //       }, 500);
+  //     }
+  //   }
+  // };
 
-  const handelPricingDetails = (whichCard: string) => {
-    if (tickDirection === "left") {
-      setOnlyDFade(true);
+  // const handelPricingDetails = (whichCard: string) => {
+  //   if (tickDirection === "left") {
+  //     setOnlyDFade(true);
 
-      setTimeout(() => {
-        if (whichCard === "basic") {
-          setDetails(detailsOptions.basicL);
-          setAllOrThis("Basic plans include");
-        }
-        if (whichCard === "standard") {
-          setDetails(detailsOptions.standardL);
-          setAllOrThis("Standard plans include");
-        }
-        if (whichCard === "premium") {
-          setDetails(detailsOptions.premiumL);
-          setAllOrThis("Premium plans include");
-        }
+  //     setTimeout(() => {
+  //       if (whichCard === "basic") {
+  //         setDetails(detailsOptions.basicL);
+  //         setAllOrThis("Basic plans include");
+  //       }
+  //       if (whichCard === "standard") {
+  //         setDetails(detailsOptions.standardL);
+  //         setAllOrThis("Standard plans include");
+  //       }
+  //       if (whichCard === "premium") {
+  //         setDetails(detailsOptions.premiumL);
+  //         setAllOrThis("Premium plans include");
+  //       }
 
-        setOnlyDFade(false);
-      }, 500);
-    }
-    if (tickDirection === "right") {
-      setOnlyDFade(true);
+  //       setOnlyDFade(false);
+  //     }, 500);
+  //   }
+  //   if (tickDirection === "right") {
+  //     setOnlyDFade(true);
 
-      setTimeout(() => {
-        if (whichCard === "basic") {
-          setDetails(detailsOptions.basicEx);
-          setAllOrThis("Basic plans include");
-        }
-        if (whichCard === "standard") {
-          setDetails(detailsOptions.standardEx);
-          setAllOrThis("Standard plans include");
-        }
-        if (whichCard === "premium") {
-          setDetails(detailsOptions.premiumEx);
-          setAllOrThis("Premium plans include");
-        }
+  //     setTimeout(() => {
+  //       if (whichCard === "basic") {
+  //         setDetails(detailsOptions.basicEx);
+  //         setAllOrThis("Basic plans include");
+  //       }
+  //       if (whichCard === "standard") {
+  //         setDetails(detailsOptions.standardEx);
+  //         setAllOrThis("Standard plans include");
+  //       }
+  //       if (whichCard === "premium") {
+  //         setDetails(detailsOptions.premiumEx);
+  //         setAllOrThis("Premium plans include");
+  //       }
 
-        setOnlyDFade(false);
-      }, 500);
-    }
-  };
+  //       setOnlyDFade(false);
+  //     }, 500);
+  //   }
+  // };
 
   const handleRedirect = (where: string) => {
     if (where === "contact") {
@@ -167,7 +172,7 @@ const PricingSection: React.FC = () => {
   return (
     <>
       {/* Pricing for Mix Mastering */}
-      <section className="plans_container" id="services">
+      {/*  <section className="plans_container" id="services">
         <div className="gardient-1"></div>
         <div className="box-1">
           <Fade cascade damping={0.1} triggerOnce>
@@ -378,6 +383,121 @@ const PricingSection: React.FC = () => {
                 </div>
               </div>
             </Zoom>
+          </div>
+        </div>
+      </section>  */}
+
+      <section className="beats_pricing">
+        <div className="gardient-1"></div>
+        <div className="box-1">
+          <Fade cascade damping={0.1} triggerOnce>
+            <div className="ticker">Beats Plans 🔥</div>
+
+            <h2>
+              Explore my pricing <br />
+              plans
+            </h2>
+            <p className="text">
+              Discover tailored pricing plans that fit your budget and <br />
+              your needs, *t&c applicable.
+            </p>
+          </Fade>
+        </div>
+
+        <div className="box-2">
+          <div className="top_line"></div>
+          <div className="planeAndText">
+            <div className="text left">Get your beats</div>
+            <div className="plane center">
+              <FaPlane className="i" />
+            </div>
+            <div className="text right">now</div>
+          </div>
+
+          <div className="main-content">
+            <div className="child-1">
+              <div className="main-text">
+                <button>Get Started</button>{" "}
+                <span className="light">
+                  We offers you a one-time price for{" "}
+                  <span className="brace">{"{"}</span>everything
+                  <span className="brace">{"}"}</span> on our Exclusive Beats
+                  Plans{" "}
+                </span>{" "}
+                <span className="dark">
+                  for you and your team. The price is negotiatable and can be
+                  changed as per your requirements and budget. we provide the
+                  best quality beats for you.
+                </span>
+              </div>
+
+              <div className="main-words">
+                <div className="icon">
+                <PiSignatureBold className="i" />
+                </div>
+
+                <div className="texts">
+                  <div className="text-1">
+                      Yo Get Your Exclusive Beats
+                  </div>
+                  <div className="text-2">
+                    From me CJ chirag beatz
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2">
+              <div className="pricing">
+                <div className="icon">
+                  <PiSignatureBold className="i" />
+                </div>
+                <h2 className="head">One Plan</h2>
+                <p className="text">
+                  Contact me for more details and pricing for the beats.
+                </p>
+
+                <div className="priceNtick">
+                  <div className="price">₹ 20,000-30,000</div>
+                  <div className="tick">lifetime</div>
+                </div>
+
+                <div className="details-box">
+                  <div className="details">
+                    <div className="details-icon">
+
+                      <FaCheck className="i" />
+                    </div>
+                    <div className="details-text">Exclusive rights to the beat</div>
+                  </div>
+                  <div className="details">
+                    <div className="details-icon">
+                      <FaCheck className="i" />
+                    </div>
+                    <div className="details-text">revisions to tailor the beat to your needs</div>
+                  </div>
+                  <div className="details">
+                    <div className="details-icon">
+                      <FaCheck className="i" />
+                    </div>
+                    <div className="details-text">Professional-grade production</div>
+                  </div>
+                  <div className="details">
+                    <div className="details-icon">
+                      <FaCheck className="i" />
+                    </div>
+                    <div className="details-text">Suitable for commercial</div>
+                  </div>
+                  <div className="details">
+                    <div className="details-icon">
+                      <FaCheck className="i" />
+                    </div>
+                    <div className="details-text"> 24/7 support </div>
+                  </div>
+                </div>
+
+                <button onClick={() => handleRedirect("contact")}>Contact Me</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
