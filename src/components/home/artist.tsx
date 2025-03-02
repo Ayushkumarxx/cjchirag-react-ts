@@ -59,15 +59,15 @@ const artistsData: Artist[] = [
     description:
       "I had the pleasure of collaborating with the talented artist, D'EVIL.",
   },
-  {
-    name: "VIJAY DADA",
-    images: {
-      img1: admin,
-      img2: "https://yt3.googleusercontent.com/a-WpvWKCjWgYSIxoE0Kd1_3DDtO5P2zNl0T6-DpIxc43HIVvHz7gHAGjkIt_J0sLKdJsP_T4=s900-c-k-c0x00ffffff-no-rj",
-    },
-    description:
-      "I had the pleasure of collaborating with the talented artist, VIJAY DADA.",
-  },
+  // {
+  //   name: "VIJAY DADA",
+  //   images: {
+  //     img1: admin,
+  //     img2: "https://instagram.fpat11-2.fna.fbcdn.net/v/t51.29350-15/329008907_582526043401359_287638769192619060_n.jpg?stp=dst-jpg_e35_s750x750_sh0.08_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMzY4eDkxNC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fpat11-2.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2AElmPvsmboTwzEAgjkQfNkr3q5Ttl6UQrDR1Ag6iCgL7dgw1z_Fr0SQpwlZNS41K6YM-YJaXErXlL2QHqOqdnmQ&_nc_ohc=MLNpUaFqJ4YQ7kNvgGKkxL6&_nc_gid=7c7ab96184d44a21ad6851b7cc613b5f&edm=ANTKIIoBAAAA&ccb=7-5&oh=00_AYANQiu3_u2ivDtvmWpYZQdrUYKPVOzJbLWpldGMIpugzA&oe=67CA31FE&_nc_sid=d885a2",
+  //   },
+  //   description:
+  //     "I had the pleasure of collaborating with the talented artist, VIJAY DADA.",
+  // },
   {
     name: "NAEZY",
     images: {

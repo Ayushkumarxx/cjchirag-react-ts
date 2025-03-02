@@ -462,6 +462,7 @@ const PricingSection: React.FC = () => {
                 </div>
 
                 <div className="details-box">
+                <Zoom cascade damping={0.1} triggerOnce>
                   <div className="details">
                     <div className="details-icon">
 
@@ -493,6 +494,7 @@ const PricingSection: React.FC = () => {
                     </div>
                     <div className="details-text"> 24/7 support </div>
                   </div>
+                  </Zoom>
                 </div>
 
                 <button onClick={() => handleRedirect("contact")}>Contact Me</button>
