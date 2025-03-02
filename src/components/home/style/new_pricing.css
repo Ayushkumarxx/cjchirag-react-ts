@@ -311,7 +311,7 @@
       }
       .beats_pricing .main-content .child-1 .light,
       .beats_pricing .main-content .child-1 .dark {
-        font-size:28px;
+        font-size:24px;
         font-weight: 500;
       }
 
@@ -350,40 +350,17 @@
       .beats_pricing .main-content .pricing .icon {
         width: 60px;
         height: 60px;
-        background: #000000;
-        border-radius: 12px;
-        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+     
       }
       .beats_pricing .main-content .pricing .icon .i {
         color: #fff;
         font-size: 24px;
       }
       
-      .beats_pricing .main-content .pricing .head {
-        margin-top: 5px;
-        font-size: 24px;
-        font-weight: 500;
-        color: #fff;
-      }
-      .beats_pricing .main-content .pricing .text {
-        margin-top: 5px;
-        font-size: 14px;
-        color: #656c7c;
-      }
-      .beats_pricing .main-content .pricing .priceNtick {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
-        padding: 10px 20px;
-        border-radius: 8px;
-      }
+    
+    
       .beats_pricing .main-content .pricing .priceNtick .price {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
         color: #fff;
       }
@@ -393,49 +370,6 @@
         padding: 8px 16px;
         font-size: 12px;
       }
-      .beats_pricing .main-content .pricing .details-box{
-          margin: 30px 0;
-      }
-      .beats_pricing .main-content .pricing .details {
-        margin-top: 10px;
-        display: flex;
-      
-        align-items: center;
-      
-      }
-      
-      .beats_pricing .main-content .pricing .details .details-icon {
-        width: 30px;
-        height: 30px;
-        background: #000000;
-        border-radius: 100px;
-        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .beats_pricing .main-content .pricing .details .details-icon .i {
-        color: #fff;
-        font-size: 12px;
-      }
-      .beats_pricing .main-content .pricing .details .details-text {
-        font-size: 14px;
-        color: #fff;
-        font-weight: 500;
-        margin-left: 10px;
-      }
-      .beats_pricing .main-content .pricing button {
-        border: none;
-        width: 100%;
-        font-weight: bold;
-        height: 45px;
-        background: #1450f2;
-        color: #fff;
-        font-size: 16px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-      }  
+
+    
 }
