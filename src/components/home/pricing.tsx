@@ -1,7 +1,7 @@
 // import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FaPlane, FaCheck } from "react-icons/fa";
+import {  FaCheck } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 // import { RiSpeakerFill } from "react-icons/ri";
 // import { FaSignature } from "react-icons/fa6";
@@ -406,13 +406,7 @@ const PricingSection: React.FC = () => {
 
         <div className="box-2">
           <div className="top_line"></div>
-          <div className="planeAndText">
-            <div className="text left">Get your beats</div>
-            <div className="plane center">
-              <FaPlane className="i" />
-            </div>
-            <div className="text right">now</div>
-          </div>
+      
 
           <div className="main-content">
             <div className="child-1">

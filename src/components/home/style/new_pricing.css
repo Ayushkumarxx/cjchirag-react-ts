@@ -43,40 +43,7 @@
   flex-direction: column;
 }
 
-.beats_pricing .box-2 .top_line {
-  width: 100%;
 
-  border-top: 0.5px solid #11101d;
-}
-
-.beats_pricing .box-2 .planeAndText {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #656c7c;
-}
-.beats_pricing .box-2 .planeAndText .left {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-}
-.beats_pricing .box-2 .planeAndText .center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.beats_pricing .box-2 .planeAndText .right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-.beats_pricing .box-2 .planeAndText .text {
-  font-size: 14px;
-  font-weight: 600;
-}
 .beats_pricing .main-content {
   display: flex;
   justify-content: space-between;
@@ -270,23 +237,9 @@
    
       }
       
-      .beats_pricing .box-2 .top_line {
-        width: 100%;
-      
-        border-top: 0.5px solid #11101d;
-      }
-      
-      .beats_pricing .box-2 .planeAndText {
 
-        margin-top: 10px;
-        margin-bottom: 10px;
      
-      }
-     
-      .beats_pricing .box-2 .planeAndText .text {
-        font-size: 14px;
-        font-weight: 600;
-      }
+   
       .beats_pricing .main-content {
         flex-direction: column;
         gap: 20px;
