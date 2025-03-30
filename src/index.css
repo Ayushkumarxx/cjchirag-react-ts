@@ -23,3 +23,10 @@ body {
   overflow-x: hidden;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .not-mob-br{
+    display: none;
+  }
+  
+}

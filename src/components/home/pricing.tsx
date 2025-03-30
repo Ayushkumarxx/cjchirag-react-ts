@@ -399,7 +399,7 @@ const PricingSection: React.FC = () => {
             </h2>
             <p className="text">
               Get exclusive beat rights with pricing designed to fit your budget{" "}
-              <br /> and needs. *Terms and conditions apply.
+              <br  className="not-mob-br"/> and needs. *Terms and conditions apply.
             </p>
           </Fade>
         </div>

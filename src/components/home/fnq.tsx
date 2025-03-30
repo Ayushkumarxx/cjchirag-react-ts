@@ -57,7 +57,7 @@ const Fnq: React.FC = () => {
         </h2>
         <p className="text">
           Answers to common questions about my services, and policies.
-          <br />
+          <br  className="not-mob-br"/>
           Find the information you need quickly and easily.
         </p>
       </div>
