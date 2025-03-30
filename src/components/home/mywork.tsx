@@ -100,7 +100,7 @@ const MyWork: React.FC = () => {
             
             </h2>
             <p className="text">
-            Produced by me, it's versatile and fresh with a new school  <br  className="not-mob-br"/> sound, bringing  a unique vibe to every track.
+            Produced by me, it's versatile and fresh with a new school sound.
         
             </p>
           </Fade>
