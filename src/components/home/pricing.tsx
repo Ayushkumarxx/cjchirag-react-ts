@@ -398,7 +398,7 @@ const PricingSection: React.FC = () => {
               Pricing
             </h2>
             <p className="text">
-              Get exclusive beat rights with pricing designed to fit your budget{" "}
+              Get custom beat rights with pricing designed to fit your budget{" "}
               <br  className="not-mob-br"/> and needs. *Terms and conditions apply.
             </p>
           </Fade>
@@ -413,7 +413,7 @@ const PricingSection: React.FC = () => {
               <div className="main-text">
                 <button>Get Started</button>{" "}
                 <span className="light">
-                  Get exclusive beats with a unique and fresh sound{" "}
+                  Get custom beats with a unique and fresh sound{" "}
                   <span className="brace">{"{"}</span>every time
                   <span className="brace">{"}"}</span>.
                 </span>{" "}
@@ -439,7 +439,7 @@ const PricingSection: React.FC = () => {
                 <div className="icon">
                   <PiSignatureBold className="i" />
                 </div>
-                <h2 className="head">Exclusive Beats</h2>
+                <h2 className="head">Custom Beats</h2>
                 <p className="text">
                   Contact me for more details and pricing for the beats.
                 </p>
