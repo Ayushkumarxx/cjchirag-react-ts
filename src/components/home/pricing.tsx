@@ -395,7 +395,7 @@ const PricingSection: React.FC = () => {
 
             <h2>
               My Custom Beat <br />
-              Pricings
+              Pricing
             </h2>
             <p className="text">
               Get exclusive beat rights with pricing designed to fit your budget{" "}
