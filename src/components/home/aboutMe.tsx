@@ -19,10 +19,10 @@ const AboutMe: React.FC = () => {
       <div className="head">
         <h2>About Me</h2>
         <p className="text">
-
+         Learn more about my journey, passion, and dedication to<br  className="not-mob-br"/>
+        creating beats and experiences
         
-          Learn more about my journey, passion, and dedication to <br  className="not-mob-br"/>
-          creating exceptional music and experiences.
+      
         </p>
       </div>
 

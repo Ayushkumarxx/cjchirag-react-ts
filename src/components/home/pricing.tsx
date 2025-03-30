@@ -394,8 +394,8 @@ const PricingSection: React.FC = () => {
             <div className="ticker">Beats Pricings 🔥</div>
 
             <h2>
-              Explore my pricing <br />
-              plans
+              My Custom Beat <br />
+              Pricings
             </h2>
             <p className="text">
               Get exclusive beat rights with pricing designed to fit your budget{" "}

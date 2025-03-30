@@ -148,7 +148,7 @@ const ArtistsWorkedWith: React.FC = () => {
           With
         </h2>
         <p className="text">
-        Check out the amazing artists I've worked with and the crazy  <br  className="not-mob-br"/>tracks we’ve created together!
+        Check out the amazing artists I've worked with , the crazy  <br  className="not-mob-br"/>tracks we’ve created together!
       
         </p>
         </Fade>
