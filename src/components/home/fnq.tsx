@@ -22,7 +22,7 @@ const accordionItems: { heading: string; description: string }[] = [
   {
     heading: "What type of software do I use?",
     description:
-      "I work with industry-standard software, primarily FL Studio, along with an extensive collection of plugins and sound libraries. This setup allows me to craft high-quality, polished music tailored to meet your project's unique needs.",
+      "I use FL Studio and have experience with mixing plugins to create high-quality beats and mixes.",
   },
 ];
 
