@@ -391,15 +391,15 @@ const PricingSection: React.FC = () => {
         <div className="gardient-1"></div>
         <div className="box-1">
           <Fade cascade damping={0.1} triggerOnce>
-            <div className="ticker">Beats Plans 🔥</div>
+            <div className="ticker">Beats Pricings 🔥</div>
 
             <h2>
               Explore my pricing <br />
               plans
             </h2>
             <p className="text">
-              Discover tailored pricing plans that fit your budget and <br />
-              your needs, *t&c applicable.
+              Get exclusive beat rights with pricing designed to fit your budget{" "}
+              <br /> and needs. *Terms and conditions apply.
             </p>
           </Fade>
         </div>
@@ -419,30 +419,24 @@ const PricingSection: React.FC = () => {
               <div className="main-text">
                 <button>Get Started</button>{" "}
                 <span className="light">
-                  We offers you a one-time price for{" "}
-                  <span className="brace">{"{"}</span>everything
-                  <span className="brace">{"}"}</span> on our Exclusive Beats
-                  Plans{" "}
+                  Get exclusive beats with a unique and fresh sound{" "}
+                  <span className="brace">{"{"}</span>every time
+                  <span className="brace">{"}"}</span>.
                 </span>{" "}
                 <span className="dark">
-                  for you and your team. The price is negotiatable and can be
-                  changed as per your requirements and budget. we provide the
-                  best quality beats for you.
+                  Perfect for you and your team, with flexible pricing to match
+                  your budget. High-quality beats, made just for you.
                 </span>
               </div>
 
               <div className="main-words">
                 <div className="icon">
-                <PiSignatureBold className="i" />
+                  <PiSignatureBold className="i" />
                 </div>
 
                 <div className="texts">
-                  <div className="text-1">
-                      Yo Get Your Exclusive Beats
-                  </div>
-                  <div className="text-2">
-                    From me CJ chirag beatz
-                  </div>
+                  <div className="text-1">Get Your Exclusive Beats</div>
+                  <div className="text-2">From me CJ Chirag Beatz</div>
                 </div>
               </div>
             </div>
@@ -451,53 +445,65 @@ const PricingSection: React.FC = () => {
                 <div className="icon">
                   <PiSignatureBold className="i" />
                 </div>
-                <h2 className="head">One Plan</h2>
+                <h2 className="head">Exclusive Beats</h2>
                 <p className="text">
                   Contact me for more details and pricing for the beats.
                 </p>
 
                 <div className="priceNtick">
-                  <div className="price">₹ 20,000-30,000</div>
+                  <div className="price">₹ 15,000-25,000</div>
                   <div className="tick">lifetime</div>
                 </div>
 
                 <div className="details-box">
-                <Zoom cascade damping={0.1} triggerOnce>
-                  <div className="details">
-                    <div className="details-icon">
-
-                      <FaCheck className="i" />
+                  <Zoom cascade damping={0.1} triggerOnce>
+                    <div className="details">
+                      <div className="details-icon">
+                        <FaCheck className="i" />
+                      </div>
+                      <div className="details-text">
+                        Exclusive rights to the beat
+                      </div>
                     </div>
-                    <div className="details-text">Exclusive rights to the beat</div>
-                  </div>
-                  <div className="details">
-                    <div className="details-icon">
-                      <FaCheck className="i" />
+                    <div className="details">
+                      <div className="details-icon">
+                        <FaCheck className="i" />
+                      </div>
+                      <div className="details-text">
+                        get revisions until you're fully satisfied
+                      </div>
                     </div>
-                    <div className="details-text">revisions to tailor the beat to your needs</div>
-                  </div>
-                  <div className="details">
-                    <div className="details-icon">
-                      <FaCheck className="i" />
+                    <div className="details">
+                      <div className="details-icon">
+                        <FaCheck className="i" />
+                      </div>
+                      <div className="details-text">
+                        Professional-grade production
+                      </div>
                     </div>
-                    <div className="details-text">Professional-grade production</div>
-                  </div>
-                  <div className="details">
-                    <div className="details-icon">
-                      <FaCheck className="i" />
+                    <div className="details">
+                      <div className="details-icon">
+                        <FaCheck className="i" />
+                      </div>
+                      <div className="details-text">
+                        Suitable for commercial
+                      </div>
                     </div>
-                    <div className="details-text">Suitable for commercial</div>
-                  </div>
-                  <div className="details">
-                    <div className="details-icon">
-                      <FaCheck className="i" />
+                    <div className="details">
+                      <div className="details-icon">
+                        <FaCheck className="i" />
+                      </div>
+                      <div className="details-text">
+                        {" "}
+                        connect directly with me{" "}
+                      </div>
                     </div>
-                    <div className="details-text"> 24/7 support </div>
-                  </div>
                   </Zoom>
                 </div>
 
-                <button onClick={() => handleRedirect("contact")}>Contact Me</button>
+                <button onClick={() => handleRedirect("contact")}>
+                  Contact Me
+                </button>
               </div>
             </div>
           </div>
@@ -510,18 +516,14 @@ const PricingSection: React.FC = () => {
 
         <div className="box-1">
           <Fade cascade damping={0.1} triggerOnce>
-            <div className="ticker">Mixing Pricing 🔥</div>
+            <div className="ticker">  Mixing/Mastering pricing 🔥</div>
 
             <div className="content">
               <div className="child-1">
-                Explore My Mixing Matering: Affordable Pricing for Your Music
-                Projects
+              Explore My Mixing Matering pirces Affordable for Your Music Projects
               </div>
               <div className="child-2">
-                Discover high-quality mixing and mastering services tailored for
-                artists, producers, and content creators. Whether you're seeking
-                a polished sound for your tracks or need assistance with final
-                touches, I offer flexible pricing to suit your needs.
+              I offer top-notch mixing and mastering services for artists, producers, and content creators. Whether you need your tracks polished or just those final touches, I've got you covered with flexible pricing to fit your need
                 <div className="ticker-2">
                   Check out <FontAwesomeIcon icon={faArrowRight} />
                 </div>

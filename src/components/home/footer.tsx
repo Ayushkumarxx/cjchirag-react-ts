@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
         <div className="box-1">
           <p className="head">CJCHIRAG BEATZ</p>
           <p className="sub-head">
-            The journey of my music life starts here with my beatz
+          The journey of my music life starts here
           </p>
 
           <p className="follow-text">Follow me on</p>

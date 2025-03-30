@@ -148,8 +148,8 @@ const ArtistsWorkedWith: React.FC = () => {
           With
         </h2>
         <p className="text">
-          Check out the amazing artists I've partnered with, delivering <br />
-          unforgettable tracks through collaboration.
+        Check out the amazing artists I've worked with and the crazy  <br />tracks we’ve created together!
+      
         </p>
         </Fade>
       </div>

@@ -95,12 +95,13 @@ const MyWork: React.FC = () => {
               <div className="ticker">recent work 🔥</div>
            
             <h2>
-              My Recent Work <br />
-              Gallery
+
+            Check Out My Latest  <br />Tracks
+            
             </h2>
             <p className="text">
-              Check out my latest music releases, tailored for versatility and
-              impact. <br /> Every track brings a fresh blend of sound.
+            Produced by me, it's versatile and fresh with a new school sound, bringing <br /> a unique vibe to every track.
+        
             </p>
           </Fade>
         </div>

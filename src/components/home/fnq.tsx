@@ -5,9 +5,9 @@ import { Fade } from "react-awesome-reveal";
 
 const accordionItems: { heading: string; description: string }[] = [
   {
-    heading: "Who is CJChirag Beatz?",
+    heading: "Who is CJ Chirag Beatz?",
     description:
-      "CJChirag Beatz, also known as Chirag Choudary, is a talented music producer and composer from India. With experience in beatboxing and a track record of working with prominent figures in the industry, he brings a unique and creative touch to every project.",
+      "CJChirag Beatz, also known as Chirag Choudary, is a talented music producer and composer from India. Working with major rappers and artists from India, he brings a unique and creative touch to every project.",
   },
   {
     heading: "What is the cost of my production?",
@@ -17,7 +17,7 @@ const accordionItems: { heading: string; description: string }[] = [
   {
     heading: "Why would one choose me?",
     description:
-      "You should choose me for my innovative approach, extensive industry experience, and youthful energy. My ability to blend creativity with professional production ensures a unique outcome that sets your project apart.",
+      "Choose me for my fresh approach and experience. I specialize in making trap beats, new wave beats, and professional productions that stand out. With a blend of creativity and quality, I’ll help take your project to the next level.",
   },
   {
     heading: "What type of software do I use?",

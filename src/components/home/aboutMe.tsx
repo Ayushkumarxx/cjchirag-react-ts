@@ -19,6 +19,8 @@ const AboutMe: React.FC = () => {
       <div className="head">
         <h2>About Me</h2>
         <p className="text">
+
+        
           Learn more about my journey, passion, and dedication to <br />
           creating exceptional music and experiences.
         </p>
@@ -31,13 +33,7 @@ const AboutMe: React.FC = () => {
         <div className="child-2">
           <p className="heading">The journey of my music life starts here</p>
           <p className="text">
-            Hey! I’m Chirag Choudary, but most people know me as CJChirag Beatz.
-            I’m a music producer, composer, and beatboxer from India, and I’m
-            all about creating music that feels real and connects. Even though
-            I’m still young, I’ve had the chance to work with some awesome
-            artists, and it’s been a crazy, inspiring journey. I’m always
-            exploring new sounds and putting my own vibe into every beat and
-            composition
+          My name is Chirag Choudhary, also known as CJ Chirag, and I’m a music producer and beatboxer from India. Inspired by the energy and creativity of trap beats, I’m on a mission to revolutionize the sound of India’s hip-hop scene. Music is more than just a craft for me it’s a passion that drives everything I do. Through my work, I aim to create a unique sound that pushes boundaries and inspires others in the process.
           </p>
 
           <div className="button">
